@@ -4,3 +4,213 @@
         <title> Gerastyx | THE-LAMBDUCK INC. </title>
       
       
+ "page": {
+                        "properties": {
+                            "name": "Zeropoint",
+                            "route": "Zeropoint",
+                            "title": "Zeropoint",
+                            "description": " Access Your Energy",
+                            "contentAreas": {
+                                "banner": {
+                                    "id": "ZeropointMain",
+                                    "hidden": false,
+                                    "content": {
+                                        "id": "ZeropointMain",
+                                        "type": "block",
+                                        "layout": "banner-1",
+                                        "purpose": "banner@^1.1.0",
+                                        "elements": [{
+                                            "id": "ZeropointMain",
+                                            "purpose": "title-1",
+                                            "properties": {
+                                                "title": {
+                                                    "quill": {
+                                                        "ops": [{
+                                                            "insert": "Connect your device "
+                                                        }, {
+                                                            "insert": "\n",
+                                                            "attributes": {
+                                                                "block": true
+                                                            }
+                                                        }]
+                                                    }
+                                                },
+                                                "fontSize": "medium",
+                                                "fontFamily": "--secondary-font"
+                                            }
+                                        }, {
+                                            "id": "ZeropointMain",
+                                            "purpose": "image-1",
+                                            "properties": {}
+                                        }, {
+                                            "id": "ZeropointMain",
+                                            "purpose": "button-1",
+                                            "properties": {
+                                                "link": {
+                                                    "tab": false,
+                                                    "link": {
+                                                        "page": {
+                                                            "pageID": "ZeropointMain"
+                                                        },
+                                                        "shopAll": true
+                                                    },
+                                                    "type": "page"
+                                                },
+                                                "label": "deviceConnect\n"
+                                            }
+                                        }],
+                                        "properties": {
+                                            "styles": {
+                                                "minHeight": "560px"
+                                            },
+                                            "shortID": "zKANqV",
+                                            "background": {
+                                                "type": "default"
+                                            }
+                                        }
+                                    }
+                                },
+                                "userContent": {
+                                    "id": "ZeropointMain",
+                                    "hidden": false,
+                                    "content": {
+                                        "id": "ZeropointMain",
+                                        "type": "container",
+                                        "cells": [{
+                                            "id": "ZeropointMain",
+                                            "type": "cell",
+                                            "content": {
+                                                "id": "ZeropointMain",
+                                                "type": "block",
+                                                "layout": "text-and-image-2-column",
+                                                "purpose": "button@^1.0.0",
+                                                "properties": {
+                                                    "shortID": "AORMkc",
+                                                    "settings": {
+                                                        "texts": {
+                                                            "hidden": true,
+                                                            "fontSize": "medium"
+                                                        },
+                                                        "images": {
+                                                            "hidden": true
+                                                        },
+                                                        "titles": {
+                                                            "hidden": true
+                                                        },
+                                                        "buttons": {
+                                                            "hidden": false,
+                                                            "presetColor": "--primary-color",
+                                                            "presetStyle": "primary"
+                                                        }
+                                                    },
+                                                    "textAlign": "center",
+                                                    "repeatables": [{
+                                                        "id": 1,
+                                                        "text": {
+                                                            "content": "One of our most popular items. Perfect for everyday use. Exceptional quality and choice."
+                                                        },
+                                                        "image": {
+                                                            "figure": {}
+                                                        },
+                                                        "title": {
+                                                            "content": "Distinctive and Bold"
+                                                        },
+                                                        "button": {
+                                                            "link": {
+                                                                "tab": false,
+                                                                "link": {
+                                                                    "page": {
+                                                                        "pageID": "89b52d60-6430-11ee-9162-813a720b4c66",
+                                                                        "sectionID": "848b8200-a554-11ec-a666-a71b3ae23538"
+                                                                    }
+                                                                },
+                                                                "type": "page"
+                                                            },
+                                                            "label": "buyEnergy\n"
+                                                        },
+                                                        "callout": {
+                                                            "content": "Quality Craftsmanship"
+                                                        },
+                                                        "secondaryButton": {
+                                                            "label": "Learn more"
+                                                        }
+                                                    }, {
+                                                        "id": 2,
+                                                        "text": {
+                                                            "content": "One of our most popular items. Perfect for everyday use. Exceptional quality and choice."
+                                                        },
+                                                        "image": {
+                                                            "figure": {}
+                                                        },
+                                                        "title": {
+                                                            "content": "Distinctive and Bold"
+                                                        },
+                                                        "button": {
+                                                            "link": {
+                                                                "tab": false,
+                                                                "link": {
+                                                                    "page": {
+                                                                        "pageID": "89a23f60-6430-11ee-87e1-45486f608964"
+                                                                    }
+                                                                },
+                                                                "type": "page"
+                                                            },
+                                                            "label": "transferEnergy\n"
+                                                        },
+                                                        "callout": {
+                                                            "content": "Quality Craftsmanship"
+                                                        },
+                                                        "secondaryButton": {
+                                                            "label": "Learn more"
+                                                        }
+                                                    }, {
+                                                        "id": 3,
+                                                        "text": {
+                                                            "content": "One of our most popular items. Perfect for everyday use. Exceptional quality and choice."
+                                                        },
+                                                        "image": {
+                                                            "figure": {}
+                                                        },
+                                                        "title": {
+                                                            "content": "Distinctive and Bold"
+                                                        },
+                                                        "button": {
+                                                            "link": {
+                                                                "tab": false,
+                                                                "link": {
+                                                                    "page": {
+                                                                        "pageID": "89a56a30-6430-11ee-9841-0f02349d4c5b"
+                                                                    }
+                                                                },
+                                                                "type": "page"
+                                                            },
+                                                            "label": "sellEnergy\n"
+                                                        },
+                                                        "callout": {
+                                                            "content": "Quality Craftsmanship"
+                                                        },
+                                                        "secondaryButton": {
+                                                            "label": "Learn more"
+                                                        }
+                                                    }, {
+                                                        "id": 4,
+                                                        "text": {
+                                                            "content": "One of our most popular items. Perfect for everyday use. Exceptional quality and choice."
+                                                        },
+                                                        "image": {
+                                                            "figure": {}
+                                                        },
+                                                        "title": {
+                                                            "content": "Distinctive and Bold"
+                                                        },
+                                                        "button": {
+                                                            "link": {
+                                                                "tab": false,
+                                                                "link": {
+                                                                    "page": {
+                                                                        "pageID": "89b38490-6430-11ee-94a9-1f1a4c32e37a"
+                                                                    }
+                                                                },
+                                                                "type": "page"
+                                                            },
+                                                            "label": "consumeEnergy\n" }, 
