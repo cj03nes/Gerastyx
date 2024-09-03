@@ -1,7 +1,7 @@
-Instilled Interoperability {  }
+pragma solidity ^8.0
 
-Zeropoint{  }
+contract Zeropoint {
 
-Swap{  }
 
-DeviceCharging{  }
+}
+
