@@ -2,7 +2,7 @@
 import React from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
 
-export default function ReceiveMoneyScreen() {
+export default function ReceiveScreen() {
   const generateQRCode = () => {
     // Logic to generate QR code
     console.log('QR Code generated');
