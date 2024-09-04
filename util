@@ -156,13 +156,29 @@ require(msg.sender[ZeropointBalance];
 msg.sender(accountBalance) = uint256( amountUSD) + uint256( amountZeropointInUSD);
 1 Zeropoint = 0.10 USD;
 $1 USD = 10 Zeropoint;
-if msg.sender(USDbalnce) = 100 && msg.sender(ZeropointBalance) = 100, 
+if msg.sender(USDbalance) = 100 && msg.sender(ZeropointBalance) = 100, 
 then msg.sender(accountBalance) = 100USD + 100ZeropointInUSD;
 100ZeropointInUSD = $10USD;
 then return msg.sender(accountBalance) = $110USD;
+accountBalance - amountZeropointInUSD = accountBalances;
+accountBalances = amountUSD && amountZeropoint;
+if msg.sender(USDbalance) = 100 && msg.sender(ZeropointBalance) = 100, 
+then msg.sender(accountBalance) = 100USD + 100ZeropointInUSD;
+
 
 buyZeropoint ={
-
+require(msg.sender == profileLoggedInto);
+require(msg.sender[USDbalance]);
+require(msg.sender[ZeropointBalance];
+msg.sender(buyZeropoint) = msg.sender(USDbalance) - uint256( amountUSDBuyingZeropointWith);
+if msg.sender(USDbalance) < uint256( amount USD) then return error,
+else if msg.sender(USDbalance) >= uint256( amount USD) then return swapUSDToZeropoint;
+swapUSDToZeropoint = msg.sender(uint256[amountUSDBuyingZeropointWith]) % zeropointPriceInUSD;
+zeropointPriceInUSD = $0.10USD;
+if msg.sender(uint256[amountUSDBuyingZeropointWith]) = $5USD then return $5USD % $0.10 = 50 Zeropoint;
+50 Zeropoint = uint256(amountZeropointBought);
+msg.sender(USDbalance) - msg.sender(amountUSDBuyingZeropointWith) = msg.sender(USDbalance);
+msg.sender(ZeropointBalance) + msg.sender(amountZeropointBought) = msg..sender(ZeropointBalance);
 
 }
 
