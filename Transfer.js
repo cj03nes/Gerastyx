@@ -1,6 +1,8 @@
 // SendMoneyScreen.js
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
+import transfer from './util.sol';
+
 
 export default function TransferScreen() {
   const [amount, setAmount] = useState('');
