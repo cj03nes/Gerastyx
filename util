@@ -113,7 +113,7 @@ purchaseWithSpendCard ={
 require(msg.sender == profileLoggedInto);
 require(msg.sender[spendCardConnected]);
 require(msg.sender[spendCardPIN]);
-require msg.sender[USDbalance];
+require(msg.sender[USDbalance]);
 msg.sender(purchaseWithSpendCard) = msg.sender[USDbalance] - uint256(amount) + require(msg.sender[spendCardPIN]);
 if msg.sender[USDbalance] < uint256(amount) then return error,
 else if msg.sender[USDbalance] >= uint256(amount) then return require(msg.sender[spendCardPIN]);
@@ -125,7 +125,7 @@ spendCardAtm = {
 require(msg.sender == profileLoggedInto);
 require(msg.sender[spendCardConnected]);
 require(msg.sender[spendCardPIN]);
-require msg.sender[USDbalance];
+require(msg.sender[USDbalance]);
 msg.sender(spendCardAtm) = msg.sender[USDbalance] - uint256(amount) + require(msg.sender[spendCardPIN]);
 if msg.sender[USDbalance] < uint256(amount) then return error,
 else if msg.sender[USDbalance] >= uint256(amount) then return require(msg.sender[spendCardPIN]);
@@ -147,12 +147,32 @@ ipAddress = mapping(Settings < About Phone < Status Information < IP Address) th
 phoneWifiMACAddress = mapping(Settings < About Phone < Status Information < Phone Wi-Fi MAC Address) then return "string" && uint256(number);
 phoneNumber = (Settings < About Phone < Phone Number) then return uint256(number);
 if msg.sender(connectDevice) != get("modelName", " productName", "serialNumber", "IMEI", "batteryStatus", "batteryLevel", "batteryCapacity", "ipAddress", "phoneWifiMACAddress", and "phoneNumber" ) then return error,
-else if msg.sender(connectDevice) == get("modelName", " productName", "serialNumber", "IMEI", "batteryStatus", "batteryLevel", "batteryCapacity", "ipAddress", "phoneWifiMACAddress", and "phoneNumber" ) then return deviceConnected;
+else if msg.sender(connectDevice) == get("modelName", " productName", "serialNumber", "IMEI", "batteryStatus", "batteryLevel", "batteryCapacity", "ipAddress", "phoneWifiMACAddress", and "phoneNumber" ) then return deviceConnected; }
+
+accountBalance ={
+require(msg.sender == profileLoggedInto);
+require(msg.sender[USDbalance]);
+require(msg.sender[ZeropointBalance];
+msg.sender(accountBalance) = uint256( amountUSD) + uint256( amountZeropointInUSD);
+1 Zeropoint = 0.10 USD;
+$1 USD = 10 Zeropoint;
+if msg.sender(USDbalnce) = 100 && msg.sender(ZeropointBalance) = 100, 
+then msg.sender(accountBalance) = 100USD + 100ZeropointInUSD;
+100ZeropointInUSD = $10USD;
+then return msg.sender(accountBalance) = $110USD;
+
+buyZeropoint ={
+
 
 }
 
 
+
+
 }
+
+
+
 
 
 
