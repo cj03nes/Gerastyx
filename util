@@ -16,6 +16,22 @@ if msg.sender( username || emailAdress || phoneNumber ) == profileCreated, then 
 if username || password != profileCreated then return error,
 else if username && password == profileCreated then loginToProfile returns profileLoggedInto;   }
 
+forgotPassword ={ 
+require(profileCreated);
+if msg.sender != loginToProfile, then return error;
+if msg.sender(loginToProfile) returns 3 errors, then msg.sender(forgotPassword);
+require(msg.sender[ emailAddress || phoneNumber ]);
+if msg.sender[ emailAddress || phoneNumber ] != profileCreated return error, 
+else if if msg.sender[ emailAddress || phoneNumber ] == profileCreated return changePassword;
+changePassword = send verificationCode to msg.sender( emailAddress || phoneNumber);
+vericationCode = random uint256(number);
+require(msg.sender return verificationCode);
+if msg.sender(verificationCode) != verificationCode then return errror,
+else if msg.sender(vericationCode) == vericationCode then return changePassword;
+changePassword = msg.sender( password = "string", confirmPassword = "string");
+if msg.sender(password) != msg.sender(confirmPassword) then return error,
+else if msg.sender(password) == msg.sender(confirmPassword) then changePassword returns passwordChanged;  }
+
 connectCard ={
 require(msg.sender == profileLoggedInto);
 require(msg.sender[cardInformation ]);
@@ -74,7 +90,6 @@ msg.sender(transferFromBank) = bankConnected + uint256(amount),
 if msg.sender[balance] <= uint256(amount) return error,
 else if msg.sender[balance] >= uint256(amount) then transferToBank returns transferredToBank;
 msg.sender[balance] - msg.sender(uint256(amount)[transferredToBank]) = msg.sender[balance];  }
-
 
 
 
