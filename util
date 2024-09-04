@@ -47,7 +47,7 @@ transferFromCard ={
 require(msg.sender == profileLoggedInto);
 require(msg.sender == cardConnected);
 msg.sender(transferFromCard) = cardConnected - uint256(amount),
-if cardConnected[USDbalance] <= uint256(amount) return error,
+if cardConnected[USDbalance] < uint256(amount) return error,
 else if cardConnected[USDbalance] >= uint256(amount) then transferFromCard returns transferredFromCard;
 msg.sender[USDbalance] + msg.sender(uint256(amount)[transferredFromCard]) = msg.sender[USDbalance];   }
 
@@ -55,7 +55,7 @@ transferToCard={
 require(msg.sender == profileLoggedInto);
 require(msg.sender == cardConnected);
 msg.sender(transferFromCard) = cardConnected + uint256(amount),
-if msg.sender[USDbalance] <= uint256(amount) return error,
+if msg.sender[USDbalance] < uint256(amount) return error,
 else if msg.sender[USDbalance] >= uint256(amount) then transferToCard returns transferredToCard;
 msg.sender[USDbalance] - msg.sender(uint256(amount)[transferredToCard]) = msg.sender[USDbalance];  }
 
@@ -77,7 +77,7 @@ transferFromBank ={
 require(msg.sender == profileLoggedInto);
 require(msg.sender == bankConnected);
 msg.sender(transferFromBank) = bankConnected - uint256(amount),
-if bankConnected[USDbalance] <= uint256(amount) return error,
+if bankConnected[USDbalance] < uint256(amount) return error,
 else if bankConnected[USDbalance] >= uint256(amount) then transferFromBank returns transferredFromBank;
 msg.sender[USDbalance] + msg.sender(uint256(amount)[transferredFromBank]) = msg.sender[USDbalance];   }
 
@@ -85,7 +85,7 @@ transferToBank ={
 require(msg.sender == profileLoggedInto);
 require(msg.sender == bankConnected);
 msg.sender(transferFromBank) = bankConnected + uint256(amount),
-if msg.sender[USDbalance] <= uint256(amount) return error,
+if msg.sender[USDbalance] < uint256(amount) return error,
 else if msg.sender[USDbalance] >= uint256(amount) then transferToBank returns transferredToBank;
 msg.sender[USDbalance] - msg.sender(uint256(amount)[transferredToBank]) = msg.sender[USDbalance];  }
 
@@ -114,6 +114,12 @@ require(msg.sender == profileLoggedInto);
 require(msg.sender[spendCardConnected]);
 require(msg.sender[spendCardPIN]);
 require msg.sender[USDbalance];
+msg.sender(purchaseWithSpendCard) = msg.sender[USDbalance] - uint256(amount) + require(msg.sender[spendCardPIN]);
+if msg.sender[USDbalance] < uint256(amount) then return error,
+else if msg.sender[USDbalance] >= uint256(amount) then return require(msg.sender[spendCardPIN]);
+if msg.sender(spendCardPIN) != msg.sender(spendCardPIN) then return error,
+else if msg.sender(spendCardPIN) == msg.sender(spendCardPIN) then purchaseWithSpendCard returns purchasedWithSpendCard,
+then return msg.sender[USDbalance] - uint256(amount purchasedWithSpendCard) = msg.sender[USDbalance];
 
 }
 
