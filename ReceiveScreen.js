@@ -1,6 +1,7 @@
 // ReceiveMoneyScreen.js
 import React from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
+ import transactionLog from './util.sol';
 
 export default function ReceiveScreen() {
   const generateQRCode = () => {
