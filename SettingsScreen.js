@@ -1,9 +1,9 @@
 // SettingsScreen.js
 import React from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
-import { connectBank, transferFromBank, transferToBank} from '.accountSettings/util.sol';
-  import {connectCard, transferFromCard, transferToCard}  from '.accountSettings/util.sol';
-import connectSpendCard from '.accountSettings/util.sol';
+import { connectBank, transferFromBank, transferToBank} from './accountSettings/util.sol';
+import {connectCard, transferFromCard, transferToCard, connectSpendCard}  from './accountSettings/util.sol';
+import {  createProfile, loginToProfile, forgotPassword } from './util.sol';
 
 export default function SettingsScreen() {
   return (
