@@ -2,6 +2,7 @@
 // WelcomeScreen.js
 import React from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
+import {buyZeropoint, sellZeropoint, consumeZeropoint } from './util.sol';
 
 export default function WelcomeScreen({ navigation }) {
   return (
