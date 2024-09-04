@@ -47,17 +47,17 @@ transferFromCard ={
 require(msg.sender == profileLoggedInto);
 require(msg.sender == cardConnected);
 msg.sender(transferFromCard) = cardConnected - uint256(amount),
-if cardConnected[balance] <= uint256(amount) return error,
-else if cardConnected[balance] >= uint256(amount) then transferFromCard returns transferredFromCard;
-msg.sender[balance] + msg.sender(uint256(amount)[transferredFromCard]) = msg.sender[balance];   }
+if cardConnected[USDbalance] <= uint256(amount) return error,
+else if cardConnected[USDbalance] >= uint256(amount) then transferFromCard returns transferredFromCard;
+msg.sender[USDbalance] + msg.sender(uint256(amount)[transferredFromCard]) = msg.sender[USDbalance];   }
 
 transferToCard={
 require(msg.sender == profileLoggedInto);
 require(msg.sender == cardConnected);
 msg.sender(transferFromCard) = cardConnected + uint256(amount),
-if msg.sender[balance] <= uint256(amount) return error,
-else if msg.sender[balance] >= uint256(amount) then transferToCard returns transferredToCard;
-msg.sender[balance] - msg.sender(uint256(amount)[transferredToCard]) = msg.sender[balance];  }
+if msg.sender[USDbalance] <= uint256(amount) return error,
+else if msg.sender[USDbalance] >= uint256(amount) then transferToCard returns transferredToCard;
+msg.sender[USDbalance] - msg.sender(uint256(amount)[transferredToCard]) = msg.sender[USDbalance];  }
 
 
 
@@ -77,17 +77,17 @@ transferFromBank ={
 require(msg.sender == profileLoggedInto);
 require(msg.sender == bankConnected);
 msg.sender(transferFromBank) = bankConnected - uint256(amount),
-if bankConnected[balance] <= uint256(amount) return error,
-else if bankConnected[balance] >= uint256(amount) then transferFromBank returns transferredFromBank;
-msg.sender[balance] + msg.sender(uint256(amount)[transferredFromBank]) = msg.sender[balance];   }
+if bankConnected[USDbalance] <= uint256(amount) return error,
+else if bankConnected[USDbalance] >= uint256(amount) then transferFromBank returns transferredFromBank;
+msg.sender[USDbalance] + msg.sender(uint256(amount)[transferredFromBank]) = msg.sender[USDbalance];   }
 
 transferToBank ={
 require(msg.sender == profileLoggedInto);
 require(msg.sender == bankConnected);
 msg.sender(transferFromBank) = bankConnected + uint256(amount),
-if msg.sender[balance] <= uint256(amount) return error,
-else if msg.sender[balance] >= uint256(amount) then transferToBank returns transferredToBank;
-msg.sender[balance] - msg.sender(uint256(amount)[transferredToBank]) = msg.sender[balance];  }
+if msg.sender[USDbalance] <= uint256(amount) return error,
+else if msg.sender[USDbalance] >= uint256(amount) then transferToBank returns transferredToBank;
+msg.sender[USDbalance] - msg.sender(uint256(amount)[transferredToBank]) = msg.sender[USDbalance];  }
 
 
 
