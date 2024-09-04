@@ -133,7 +133,7 @@ then return msg.sender[USDbalance] - uint256(amount receivedFromAtm) = msg.sende
 
 connectDevice ={
 require(msg.sender == profileLoggedInto);
-msg.sender(connectDevice) = get("modelName", " productName", "serialNumber", "IMEI", "batteryStatus", "batteryLevel", "batteryCapacity", "ipAddress", "phoneWifiMACAddress", and "phoneNumber" );
+msg.sender(connectDevice) = get("modelName", " productName", "serialNumber", "IMEI", "batteryStatus", "batteryLevel", "batteryCapacity", "ipAddress", "phoneWifiMACAddress", "phoneNumber", "APN", "MCC", "MNC", "APN Type", "APN Protocol", "APN roaming protocol", "Turn APN On/Off", "Mobile Network Operator Value", "Bluetooth Tethering" );
 modelName = mapping(Settings < About Phone < Model Name) then return "string";
 productName = mapping(Settings < About Phone < Product Name ) then return "string");
 serialNumber = mapping(Settings < About Phone < Serial Number) then return uint256(number);
@@ -144,8 +144,17 @@ batteryCapacity = mapping(Settings < About Phone < Battery Capacity) then return
 ipAddress = mapping(Settings < About Phone < Status Information < IP Address) then return "string" && uint256(number);
 phoneWifiMACAddress = mapping(Settings < About Phone < Status Information < Phone Wi-Fi MAC Address) then return "string" && uint256(number);
 phoneNumber = (Settings < About Phone < Phone Number) then return uint256(number);
-if msg.sender(connectDevice) != get("modelName", " productName", "serialNumber", "IMEI", "batteryStatus", "batteryLevel", "batteryCapacity", "ipAddress", "phoneWifiMACAddress", and "phoneNumber" ) then return error,
-else if msg.sender(connectDevice) == get("modelName", " productName", "serialNumber", "IMEI", "batteryStatus", "batteryLevel", "batteryCapacity", "ipAddress", "phoneWifiMACAddress", and "phoneNumber" ) then return deviceConnected; }
+APN = (Settings < Connections < Mobile Networks < Access Point Names < Edit Access Point < APN) then return "string";
+MCC = (Settings < Connections < Mobile Networks < Access Point Names < Edit Access Point < MCC) then return 3 digit uint256(number);
+MNC = (Settings < Connections < Mobile Networks < Access Point Names < Edit Access Point < MNC) then return 3 digit uint256(number);
+APN Type = (Settings < Connections < Mobile Networks < Access Point Names < Edit Access Point < APN Type) then return "string";
+APN Protocol = (Settings < Connections < Mobile Networks < Access Point Names < Edit Access Point < APN Protocol) then return "string" && uint256(number);
+APN roaming protocol = (Settings < Connections < Mobile Networks < Access Point Names < Edit Access Point < APN roaming protocol) then return "string" && uint256(number);
+Turn APN On/Off= (Settings < Connections < Mobile Networks < Access Point Names < Edit Access Point < Turn APN On/Off) then return "string", require(Turn APN On/Off) == On;
+Mobile Network Operator Value = (Settings < Connections < Mobile Networks < Access Point Names < Edit Access Point < Mobile virtual network operator value) then return "string";
+Bluetooth Tethering = (Settings < Connections < Mobile Hotspot and Tethering < Bluetooth tethering) then return on || off); 
+if msg.sender(connectDevice) != get("modelName", " productName", "serialNumber", "IMEI", "batteryStatus", "batteryLevel", "batteryCapacity", "ipAddress", "phoneWifiMACAddress", "phoneNumber", "APN", "MCC", "MNC", "APN Type", "APN Protocol", "APN roaming protocol", "Turn APN On/Off", "Mobile Network Operator Value", "Bluetooth Tethering" ) then return error,
+else if msg.sender(connectDevice) == get("modelName", " productName", "serialNumber", "IMEI", "batteryStatus", "batteryLevel", "batteryCapacity", "ipAddress", "phoneWifiMACAddress", "phoneNumber", "APN", "MCC", "MNC", "APN Type", "APN Protocol", "APN roaming protocol", "Turn APN On/Off", "Mobile Network Operator Value", "Bluetooth Tethering") then return deviceConnected; }
 
 accountBalance ={
 require(msg.sender == profileLoggedInto);
