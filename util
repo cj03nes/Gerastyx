@@ -107,7 +107,7 @@ require(msg.sender[createSpendCardPIN + confirmSpendCardPIN]);
 createSpendCardPIN = 4 digit uint256(number);
 confirmSpendCardPIN = 4 digit uint256(number);
 if msg.sender(createSpendCardPIN) != msg.sender(confirmSpendCardPIN) then return error,
-else if msg.sender(createSpendCardPIN) == msg.sender(confirmSpendCardPIN) then createSpendCardPIN returns spendCardPIN;}
+else if msg.sender(createSpendCardPIN) == msg.sender(confirmSpendCardPIN) then createSpendCardPIN returns spendCardPIN;  }
 
 purchaseWithSpendCard ={
 require(msg.sender == profileLoggedInto);
@@ -119,9 +119,23 @@ if msg.sender[USDbalance] < uint256(amount) then return error,
 else if msg.sender[USDbalance] >= uint256(amount) then return require(msg.sender[spendCardPIN]);
 if msg.sender(spendCardPIN) != msg.sender(spendCardPIN) then return error,
 else if msg.sender(spendCardPIN) == msg.sender(spendCardPIN) then purchaseWithSpendCard returns purchasedWithSpendCard,
-then return msg.sender[USDbalance] - uint256(amount purchasedWithSpendCard) = msg.sender[USDbalance];
+then return msg.sender[USDbalance] - uint256(amount purchasedWithSpendCard) = msg.sender[USDbalance];  }
+
+spendCardAtm = {
+require(msg.sender == profileLoggedInto);
+require(msg.sender[spendCardConnected]);
+require(msg.sender[spendCardPIN]);
+require msg.sender[USDbalance];
+msg.sender(spendCardAtm) = msg.sender[USDbalance] - uint256(amount) + require(msg.sender[spendCardPIN]);
+if msg.sender[USDbalance] < uint256(amount) then return error,
+else if msg.sender[USDbalance] >= uint256(amount) then return require(msg.sender[spendCardPIN]);
+if msg.sender(spendCardPIN) != msg.sender(spendCardPIN) then return error,
+else if msg.sender(spendCardPIN) == msg.sender(spendCardPIN) then spendCardAtm returns receivedFromAtm,
+then return msg.sender[USDbalance] - uint256(amount receivedFromAtm) = msg.sender[USDbalance];  }
 
 }
+
+
 
 
 
