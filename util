@@ -8,7 +8,13 @@ then return send verificationCode to msg.sender( emailAddress || phoneNumber);
 vericationCode = random uint256(number);
 require(msg.sender return verificationCode);
 if msg.sender(verificationCode) != verificationCode then return errror,
-else if msg.sender(vericationCode) == vericationCode then createProfile returns profileCreated;
+else if msg.sender(vericationCode) == vericationCode then createProfile returns profileCreated;   }
+
+loginToProfile ={
+
+if msg.sender( username || emailAdress || phoneNumber ) == profileCreated, then require msg.sender(username + password);
+if username || password != profileCreated then return error,
+else if username && password == profileCreated then loginToProfile returns profileLoggedInto;   }
 
 
 }
