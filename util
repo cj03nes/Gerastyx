@@ -24,9 +24,25 @@ cardNumber = 16 digit uint256(number);
 expirationDate = 2 digit uint256(number[month]) + 2 digit uint256(number[year]);
 CVC = 3 digit uint256(number);
 nameOnFile = ( firstName + lastName);
-
 if msg.sender[cardInformation ] != ( cardNumber + expirationDate + CVC + nameOnFile) then return error,
 else if msg.sender[cardInformation ] == ( cardNumber + expirationDate + CVC + nameOnFile) then connectCard returns cardConnected;  }
+
+
+connectBank ={
+require(msg.sender == profileLoggedInto);
+require(msg.sender[bankInformation]);
+bankInformation = (bankName + username + password);
+bankName = ("string");
+username = ("string");
+password = ("string");
+
+if msg.sender[bankInformation] != (bankName + username + password) then return error,
+else if msg.sender[bankInformation] == (bankName + username + password) then connectBank returns bankConnected;  }
+
+
+
+
+
 
 
 }
