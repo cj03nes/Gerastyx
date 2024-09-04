@@ -31,13 +31,15 @@ else if msg.sender[cardInformation ] == ( cardNumber + expirationDate + CVC + na
 connectBank ={
 require(msg.sender == profileLoggedInto);
 require(msg.sender[bankInformation]);
-bankInformation = (bankName + username + password);
+bankInformation = (bankName + accountNumber + routingNumber + username + password);
 bankName = ("string");
+accountNumber = 12 digit uint256(number);
+routingNumber = 9 digit uint256(number);
 username = ("string");
 password = ("string");
 
-if msg.sender[bankInformation] != (bankName + username + password) then return error,
-else if msg.sender[bankInformation] == (bankName + username + password) then connectBank returns bankConnected;  }
+if msg.sender[bankInformation] != (bankName + accountNumber + routingNumber + username + password) then return error,
+else if msg.sender[bankInformation] == (bankName + accountNumber + routingNumber + username + password) then connectBank returns bankConnected;  }
 
 
 
