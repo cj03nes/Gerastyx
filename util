@@ -158,9 +158,9 @@ msg.sender(accountBalance) = uint256( amountUSD) + uint256( amountZeropointInUSD
 $1 USD = 10 Zeropoint;
 if msg.sender(USDbalance) = 100 && msg.sender(ZeropointBalance) = 100, 
 then msg.sender(accountBalance) = 100USD + 100ZeropointInUSD;
-100ZeropointInUSD = $10USD;
+100ZeropointInUSD * 0.10 = $10USD;
 then return msg.sender(accountBalance) = $110USD;
-accountBalance - amountZeropointInUSD = accountBalances;
+accountBalances = (msg.sender[USDbalance]) && (msg.sender[ZeropointBalance];
 accountBalances = amountUSD && amountZeropoint;
 if msg.sender(USDbalance) = 100 && msg.sender(ZeropointBalance) = 100, 
 then msg.sender(accountBalances) = 100USD && 100Zeropoint;
@@ -169,21 +169,35 @@ then msg.sender(accountBalances) = 100USD && 100Zeropoint;
 buyZeropoint ={
 require(msg.sender == profileLoggedInto);
 require(msg.sender[USDbalance]);
-require(msg.sender[ZeropointBalance];
+require(msg.sender[ZeropointBalance]);
+privateOwner(USDbalance2);
 msg.sender(buyZeropoint) = msg.sender(USDbalance) - uint256( amountUSDBuyingZeropointWith);
 if msg.sender(USDbalance) < uint256( amount USD) then return error,
 else if msg.sender(USDbalance) >= uint256( amount USD) then return swapUSDToZeropoint;
-swapUSDToZeropoint = msg.sender(uint256[amountUSDBuyingZeropointWith]) % ZeropointPriceInUSD;
+swapUSDToZeropoint = msg.sender(uint256[amountUSDBuyingZeropointWith]) % zeropointPriceInUSD;
 zeropointPriceInUSD = $0.10USD;
 if msg.sender(uint256[amountUSDBuyingZeropointWith]) = $5USD; then $5USD % $0.10 = 50 Zeropoint;
 50 Zeropoint = uint256(amountZeropointBought);
 msg.sender(USDbalance) - msg.sender(amountUSDBuyingZeropointWith) = msg.sender(USDbalance);
 msg.sender(ZeropointBalance) + msg.sender(amountZeropointBought) = msg.sender(ZeropointBalance);
-privateOwner(USDbalance) + msg.sender(amountUSDBuyingZeropointWith) = privateOwner(USDbalance); 
-publicOwner}
+privateOwner(USDbalance2) + msg.sender(amountUSDBuyingZeropointWith) = privateOwner(USDbalance2);  }
+
 
 sellZeropoint ={
-
+require(msg.sender == profileLoggedInto);
+require(msg.sender[USDbalance]);
+require(msg.sender[ZeropointBalance]);
+privateOwner(USDbalance2);
+msg.sender(sellZeropoint) = msg.sender(ZeropointBalance) - uint256( amountZeropointSelling);
+if msg.sender(ZeropointBalance) < uint256(amountZeropointSelling) then return error,
+else if msg.sender(USDbalance) >= uint256(amountZeropointSelling) then return swapZeropointToUSD;
+swapZeropointToUSD = msg.sender(amountZeropointSelling) * zeropointPriceInUSD;
+zeropointPriceInUSD = $0.10USD;
+if msg.sender(uint256[amountZeropointSelling]) = 50 Zeropoint; then 50 Zeropoint * $0.10 = $5 USD;
+$5 USD = uint256(amountZeropointSoldInUSD);
+msg.sender(ZeropointBalance) - msg.sender(amountZeropointSelling) = msg.sender(ZeropointBalance);
+msg.sender(USDbalance) + msg.sender(amountZeropointSoldInUSD) = msg.sender(USDbalance);
+privateOwner(USDbalance2) - msg.sender(amountZeropointSoldInUSD) = privateOwner(USDbalance2);  }
 
 
 }
