@@ -27,6 +27,25 @@ nameOnFile = ( firstName + lastName);
 if msg.sender[cardInformation ] != ( cardNumber + expirationDate + CVC + nameOnFile) then return error,
 else if msg.sender[cardInformation ] == ( cardNumber + expirationDate + CVC + nameOnFile) then connectCard returns cardConnected;  }
 
+transferFromCard ={
+require(msg.sender == profileLoggedInto);
+require(msg.sender == cardConnected);
+msg.sender(transferFromCard) = cardConnected - uint256(amount),
+if cardConnected[balance] <= uint256(amount) return error,
+else if cardConnected[balance] >= uint256(amount) then transferFromCard returns transferredFromCard;
+msg.sender[balance] + msg.sender(uint256(amount)[transferredFromCard]) = msg.sender[balance]; 
+
+}
+
+transferToCard={
+require(msg.sender == profileLoggedInto);
+require(msg.sender == cardConnected);
+msg.sender(transferFromCard) = cardConnected + uint256(amount),
+if msg.sender[balance] <= uint256(amount) return error,
+else if msg.sender[balance] >= uint256(amount) then transferToCard returns transferredToCard;
+msg.sender[balance] - msg.sender(uint256(amount)[transferredToCard]) = msg.sender[balance];  }
+
+
 
 connectBank ={
 require(msg.sender == profileLoggedInto);
