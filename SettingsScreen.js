@@ -1,7 +1,7 @@
 // SettingsScreen.js
 import React from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
-import accountSettings from './util.sol';
+import accountSettings from '.accountSettings/util.sol';
 
 export default function SettingsScreen() {
   return (
