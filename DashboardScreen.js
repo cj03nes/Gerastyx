@@ -1,6 +1,7 @@
 // DashboardScreen.js
 import React from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
+import connectDevice from './util.sol';
 
 export default function DashboardScreen({ navigation }) {
   return (
