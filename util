@@ -163,7 +163,7 @@ then return msg.sender(accountBalance) = $110USD;
 accountBalance - amountZeropointInUSD = accountBalances;
 accountBalances = amountUSD && amountZeropoint;
 if msg.sender(USDbalance) = 100 && msg.sender(ZeropointBalance) = 100, 
-then msg.sender(accountBalance) = 100USD + 100ZeropointInUSD;
+then msg.sender(accountBalances) = 100USD && 100Zeropoint;
 
 
 buyZeropoint ={
@@ -173,12 +173,18 @@ require(msg.sender[ZeropointBalance];
 msg.sender(buyZeropoint) = msg.sender(USDbalance) - uint256( amountUSDBuyingZeropointWith);
 if msg.sender(USDbalance) < uint256( amount USD) then return error,
 else if msg.sender(USDbalance) >= uint256( amount USD) then return swapUSDToZeropoint;
-swapUSDToZeropoint = msg.sender(uint256[amountUSDBuyingZeropointWith]) % zeropointPriceInUSD;
+swapUSDToZeropoint = msg.sender(uint256[amountUSDBuyingZeropointWith]) % ZeropointPriceInUSD;
 zeropointPriceInUSD = $0.10USD;
-if msg.sender(uint256[amountUSDBuyingZeropointWith]) = $5USD then return $5USD % $0.10 = 50 Zeropoint;
+if msg.sender(uint256[amountUSDBuyingZeropointWith]) = $5USD; then $5USD % $0.10 = 50 Zeropoint;
 50 Zeropoint = uint256(amountZeropointBought);
 msg.sender(USDbalance) - msg.sender(amountUSDBuyingZeropointWith) = msg.sender(USDbalance);
-msg.sender(ZeropointBalance) + msg.sender(amountZeropointBought) = msg..sender(ZeropointBalance);
+msg.sender(ZeropointBalance) + msg.sender(amountZeropointBought) = msg.sender(ZeropointBalance);
+privateOwner(USDbalance) + msg.sender(amountUSDBuyingZeropointWith) = privateOwner(USDbalance); 
+publicOwner}
+
+sellZeropoint ={
+
+
 
 }
 
