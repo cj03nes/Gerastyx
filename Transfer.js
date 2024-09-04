@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
 
-export default function SendMoneyScreen() {
+export default function TransferScreen() {
   const [amount, setAmount] = useState('');
   const [recipient, setRecipient] = useState('');
 
