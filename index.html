@@ -1,5 +1,5 @@
 const header = `
-    <header style="background-color: darkroyalpurple; color: gold;">
+    <header style="background-color: #4B006E; color: #FFD700;">
         <div id="balances">
             <p>USD Balance: $0.00</p>
             <p>Zeropoint Balance: 0 ZP</p>
@@ -11,7 +11,7 @@ const header = `
 `;
 
 const footer = `
-    <footer style="background-color: grayishblue; color: gold;">
+    <footer style="background-color: #6699CC; color: #FFD700;">
         <div id="team" style="float: right;">
             <button onclick="showTeam()">Team</button>
         </div>
@@ -23,7 +23,7 @@ const footer = `
 `;
 
 const mainContent = `
-    <main style="background-color: darkroyalpurple; color: gold;">
+    <main style="background-color: #4B006E; color: #FFD700;">
         <div id="actions">
             <button onclick="buyZeropoint()">Buy Zeropoint</button>
             <button onclick="sellZeropoint()">Sell Zeropoint</button>
@@ -102,7 +102,7 @@ function showTeam() {
     teamContentDiv.style.display = teamContentDiv.style.display === 'none' ? 'block' : 'none';
 }
 
-// Example Data Binding (this would be replaced with real data from your backend)
+
 document.getElementById('balances').innerHTML = `
     <p>USD Balance: $100.00</p>
     <p>Zeropoint Balance: 500 ZP</p>
