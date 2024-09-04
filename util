@@ -211,10 +211,24 @@ if msg.sender(deviceConnected[ baterryLevel]) > 98% then return error , " Batter
 else if msg.sender(deviceConnected[ baterryLevel]) < 98% then consumeZeropoint returns ZeropointConsumed;
 msg.sender(deviceConnected[ batteryLevel + amountZeropointToConsume]) = deviceConnected(balance);
 deviceConnected(balance) !> 98%;
+msg.sender(amountZeropointToConsume) * $0.10USD = msg.sender(amountZeropointToConsumeInUSD);
+privateOwner(USDbalance2) - msg.sender(amountZeropointToConsumeInUSD) = privateOwner(USDbalance2) ;
+privateOwner(USDbalance1) + msg.sender(amountZeropointToConsumeInUSD) = privateOwner(USDbalance1) ;   }
+
+buyZeropointWifi ={
+require(msg.sender == profileLoggedInto);
+require(msg.sender[USDbalance]);
+require(msg.sender[ZeropointBalance]);
+require(msg.sender[deviceConnected]);
+require(privateOwner[USDbalance2]);
+require(privateOwner[USDbalance1]);
+msg.sender(buyZeropointWifi) = ( uint256(amountUSDToBuyZeropointWifi) || uint256(amountZeropointToBuyZeropointWifi) ) + msg.sender(deviceConnected);
+if msg.sender(USDbalance || ZeropointBalance) < (amountUSDToBuyZeropointWifi || amountZeropointToBuyZeropointWifi) then return error,
+else if msg.sender(USDbalance || ZeropointBalance) > ( amountUSDToBuyZeropointWifi || amountZeropointToBuyZeropointWifi) then return msg.sender(deviceConnected[ batteryLevel + amountZeropointToConsume]);
 
 
 
-}
+
 
 
 
