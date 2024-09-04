@@ -3,7 +3,7 @@
 import React from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
 import {buyZeropoint, sellZeropoint, consumeZeropoint } from './util.sol';
-import buyZeropointWifi from './util.sol';
+import { buyZeropointWifi, createProfile } from './util.sol';
 
 export default function WelcomeScreen({ navigation }) {
   return (
