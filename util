@@ -1,6 +1,17 @@
 contract Zeropoint {
 
-accountSettings{}
+accountSettings{
+
+createProfile ={ 
+msg.sender( username + password + emailAddress || phoneNumber ),
+then return send verificationCode to msg.sender( emailAddress || phoneNumber);
+vericationCode = random uint256(number);
+require(msg.sender return verificationCode);
+if msg.sender(verificationCode) != verificationCode then return errror,
+else if msg.sender(vericationCode) == vericationCode then createProfile returns profileCreated;
+
+
+}
 
 function buyZeropoint{}
 
