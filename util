@@ -168,7 +168,7 @@ buyZeropoint ={
 require(msg.sender == profileLoggedInto);
 require(msg.sender[USDbalance]);
 require(msg.sender[ZeropointBalance]);
-privateOwner(USDbalance2);
+require(privateOwner[USDbalance2]);
 msg.sender(buyZeropoint) = msg.sender(USDbalance) - uint256( amountUSDBuyingZeropointWith);
 if msg.sender(USDbalance) < uint256( amount USD) then return error,
 else if msg.sender(USDbalance) >= uint256( amount USD) then return swapUSDToZeropoint;
@@ -185,7 +185,7 @@ sellZeropoint ={
 require(msg.sender == profileLoggedInto);
 require(msg.sender[USDbalance]);
 require(msg.sender[ZeropointBalance]);
-privateOwner(USDbalance2);
+require(privateOwner[USDbalance2]);
 msg.sender(sellZeropoint) = msg.sender(ZeropointBalance) - uint256( amountZeropointSelling);
 if msg.sender(ZeropointBalance) < uint256(amountZeropointSelling) then return error,
 else if msg.sender(USDbalance) >= uint256(amountZeropointSelling) then return swapZeropointToUSD;
@@ -201,7 +201,17 @@ consumeZeropoint ={
 require(msg.sender == profileLoggedInto);
 require(msg.sender[USDbalance]);
 require(msg.sender[ZeropointBalance]);
-privateOwner(USDbalance2);
+require(msg.sender[deviceConnected]);
+require(privateOwner[USDbalance2]);
+require(privateOwner[USDbalance1]);
+msg.sender(consumeZeropoint) = msg.sender(uint256[amountZeropointToConsume]) + msg.sender(deviceConnected);
+if msg.sender(ZeropointBalance) < amountZeropointToConsume then return error,
+else if msg.sender(ZeropointBalance) >= amountZeropointToConsume then return msg.sender(deviceConnected[ batteryLevel + amountZeropointToConsume]);
+if msg.sender(deviceConnected[ baterryLevel]) > 98% then return error , " Battery Percentage is too high.",
+else if msg.sender(deviceConnected[ baterryLevel]) < 98% then consumeZeropoint returns ZeropointConsumed;
+msg.sender(deviceConnected[ batteryLevel + amountZeropointToConsume]) = deviceConnected(balance);
+deviceConnected(balance) !> 98%;
+
 
 
 }
