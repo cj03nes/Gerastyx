@@ -133,13 +133,32 @@ if msg.sender(spendCardPIN) != msg.sender(spendCardPIN) then return error,
 else if msg.sender(spendCardPIN) == msg.sender(spendCardPIN) then spendCardAtm returns receivedFromAtm,
 then return msg.sender[USDbalance] - uint256(amount receivedFromAtm) = msg.sender[USDbalance];  }
 
+connectDevice ={
+require(msg.sender == profileLoggedInto);
+msg.sender(connectDevice) = get("modelName", " productName", "serialNumber", "IMEI", "batteryStatus", "batteryLevel", "batteryCapacity", "ipAddress", "phoneWifiMACAddress", and "phoneNumber" );
+modelName = mapping(Settings < About Phone < Model Name) then return "string";
+productName = mapping(Settings < About Phone < Product Name ) then return "string");
+serialNumber = mapping(Settings < About Phone < Serial Number) then return uint256(number);
+IMEI = mapping(Settings < About Phone < IMEI) then return uint256(number);
+batteryStatus = mapping(Settings < About Phone < Battery Information < Battery Status) then return "string";
+batteryLevel = mapping(Settings < About Phone < Battery Level) then return uint256(number[percent]);
+batteryCapacity = mapping(Settings < About Phone < Battery Capacity) then return uint256(number);
+ipAddress = mapping(Settings < About Phone < Status Information < IP Address) then return "string" && uint256(number);
+phoneWifiMACAddress = mapping(Settings < About Phone < Status Information < Phone Wi-Fi MAC Address) then return "string" && uint256(number);
+phoneNumber = (Settings < About Phone < Phone Number) then return uint256(number);
+if msg.sender(connectDevice) != get("modelName", " productName", "serialNumber", "IMEI", "batteryStatus", "batteryLevel", "batteryCapacity", "ipAddress", "phoneWifiMACAddress", and "phoneNumber" ) then return error,
+else if msg.sender(connectDevice) == get("modelName", " productName", "serialNumber", "IMEI", "batteryStatus", "batteryLevel", "batteryCapacity", "ipAddress", "phoneWifiMACAddress", and "phoneNumber" ) then return deviceConnected;
+
+}
+
+
 }
 
 
 
 
 
-}
+
 
 function buyZeropoint{}
 
@@ -150,7 +169,7 @@ function consumeZeropoint {}
 function transferZeropoint{}
 function transferUSD{}
 
-function connectDevice{}
+
 
 function get msg.sender[balances]{}
 
