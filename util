@@ -15,6 +15,8 @@ function connectDevice{}
 
 function get msg.sender[balances]{}
 
+function transactionLog {}
+
 
 }
 
