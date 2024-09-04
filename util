@@ -49,9 +49,7 @@ require(msg.sender == cardConnected);
 msg.sender(transferFromCard) = cardConnected - uint256(amount),
 if cardConnected[balance] <= uint256(amount) return error,
 else if cardConnected[balance] >= uint256(amount) then transferFromCard returns transferredFromCard;
-msg.sender[balance] + msg.sender(uint256(amount)[transferredFromCard]) = msg.sender[balance]; 
-
-}
+msg.sender[balance] + msg.sender(uint256(amount)[transferredFromCard]) = msg.sender[balance];   }
 
 transferToCard={
 require(msg.sender == profileLoggedInto);
@@ -104,7 +102,20 @@ expirationDate = 2 digit uint256(number[month]) + 2 digit uint256(number[year]);
 CVC = 3 digit uint256(number);
 nameOnFile = ( firstName + lastName);
 if msg.sender[spendCardInformation ] != ( spendCardNumber + expirationDate + CVC + nameOnFile) then return error,
-else if msg.sender[spendCardInformation ] == ( spendCardNumber + expirationDate + CVC + nameOnFile) then connectSpendCard returns spendCardConnected;  }
+else if msg.sender[spendCardInformation ] == ( spendCardNumber + expirationDate + CVC + nameOnFile) then connectSpendCard returns spendCardConnected;
+require(msg.sender[createSpendCardPIN + confirmSpendCardPIN]);
+createSpendCardPIN = 4 digit uint256(number);
+confirmSpendCardPIN = 4 digit uint256(number);
+if msg.sender(createSpendCardPIN) != msg.sender(confirmSpendCardPIN) then return error,
+else if msg.sender(createSpendCardPIN) == msg.sender(confirmSpendCardPIN) then createSpendCardPIN returns spendCardPIN;}
+
+purchaseWithSpendCard ={
+require(msg.sender == profileLoggedInto);
+require(msg.sender[spendCardConnected]);
+require(msg.sender[spendCardPIN]);
+
+}
+
 
 
 }
