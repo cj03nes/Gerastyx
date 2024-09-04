@@ -242,22 +242,50 @@ msg.sender(ZeropointBalance || USDbalance) - msg.sender(amountUSDToBuyZeropointW
 privateOwner(USDbalance2) + ( msg.sender(uint256(amountUSDToBuyZeropointWifi) || uint256(amountZeropointToBuyZeropointWifi) %2) = privateOwner(USDbalance2) ;
 privateOwner(USDbalance1) + ( msg.sender(uint256(amountUSDToBuyZeropointWifi) || uint256(amountZeropointToBuyZeropointWifi) %2) = privateOwner(USDbalance1) ;  
 
+function transfer ={
+require(msg.sender == profileLoggedInto);
+require(msg.sender[USDbalance]);
+require(msg.sender[ZeropointBalance]);
+require(recipient[USDbalance]);
+require(recipient[ZeropointBalance]);
+msg.sender(transfer) = uint256(amountUSDToBeTransferred || amountZeropointToBeTransferred) + recipient;
+recipient = username || emailAddress || phoneNumber;
+if msg.sender( USDbalance || ZeropointBalance ) < uint256(amountUSDToBeTransferred || amountZeropointToBeTransferred) then return error,
+else if msg.sender( USDbalance || ZeropointBalance ) >= uint256(amountUSDToBeTransferred || amountZeropointToBeTransferred) then (amountUSDToBeTransferred || amountZeropointToBeTransferred) returns (amountUSDTransferred || amountZeropointTransferred);
+msg.sender(USDbalance || ZeropointBalance ) - msg.sender(amountUSDTransferred || amountZeropointTransferred ) = msg.sender(USDbalance || ZeropointBalance );
+recipient(USDbalance || ZeropointBalance ) + msg.sender(amountUSDTransferred || amountZeropointTransferred ) = recipient(USDbalance || ZeropointBalance );    }
 
-
-
-
+function transactionLog{
+require(msg.sender == profileLoggedInto);
+require(msg.sender[USDbalance]);
+require(msg.sender[ZeropointBalance]);
+require(msg.sender[amountUSDTransferred || amountZeropointTransferred]);
+require(msg.sender[amountZeropointSoldInUSD]);
+require(msg.sender[amountZeropointWifiToBuyAndConsume]);
+require(msg.sender[amountUSDToBuyZeropointWifi]):
+require(msg.sender[amountZeropointToBuyZeropointWifi]);
+require(msg.sender[amountZeropointToConsume]);
+require(msg.sender[amountZeropointToConsumeInUSD])
+require(msg.sender[amountUSDBuyingZeropointWith]);
+require(msg.sender[amountZeropointBought]);
+require(msg.sender[receivedFromAtm]);
+require(msg.sender[deviceConnected]);
+require(msg.sender[purchasedWithSpendCard]);
+require(msg.sender[spendCardConnected]);
+require(msg.sender == bankConnected);
+require(msg.sender[transferredToBank]);
+require(msg.sender[transferredFromBank]);
+require(msg.sender[transferredToCard]);
+require(msg.sender[transferredFromCard]);
+require(msg.sender[cardConnected]);
+require(msg.sender[passwordChanged]);
+require(msg.sender[profileLoggedInto]);
+require(msg.sender[ profileCreated]);   }
 
 }
 
 
-function transferZeropoint{}
-function transferUSD{}
-
-
-
-function get msg.sender[balances]{}
-
-function transactionLog {}
+}
 
 
 }
