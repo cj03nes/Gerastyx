@@ -250,20 +250,6 @@ privateOwner(USDbalance1) + ( msg.sender(uint256(amountUSDToBuyZeropointWifi) ||
 }
 
 
-
-
-
-
-
-
-
-
-function buyZeropoint{}
-
-function sellZeropoint{}
-
-function consumeZeropoint {}
-
 function transferZeropoint{}
 function transferUSD{}
 
