@@ -91,8 +91,6 @@ msg.sender[USDbalance] - msg.sender(uint256(amount)[transferredToBank]) = msg.se
 
 
 
-
-
 connectSpendCard ={
 require(msg.sender == profileLoggedInto);
 require(msg.sender[spendCardInformation]);
@@ -198,6 +196,12 @@ $5 USD = uint256(amountZeropointSoldInUSD);
 msg.sender(ZeropointBalance) - msg.sender(amountZeropointSelling) = msg.sender(ZeropointBalance);
 msg.sender(USDbalance) + msg.sender(amountZeropointSoldInUSD) = msg.sender(USDbalance);
 privateOwner(USDbalance2) - msg.sender(amountZeropointSoldInUSD) = privateOwner(USDbalance2);  }
+
+consumeZeropoint ={
+require(msg.sender == profileLoggedInto);
+require(msg.sender[USDbalance]);
+require(msg.sender[ZeropointBalance]);
+privateOwner(USDbalance2);
 
 
 }
