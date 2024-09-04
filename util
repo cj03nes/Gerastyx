@@ -43,12 +43,18 @@ else if msg.sender[bankInformation] == (bankName + accountNumber + routingNumber
 transferFromBank ={ 
 require(msg.sender == profileLoggedInto);
 require(msg.sender == bankConnected);
-msg.sender(transferFromBank) = bankConnect - uint256(amount);
-require(msg.sender[verification];
-verification = notification( "yes,continue" || "no,exit" );
-if msg.sender returns "no,exit" then return error,
-else if msg.sender return "yes,continue" 
+msg.sender(transferFromBank) = bankConnected - uint256(amount),
+if bankConnected[balance] <= uint256(amount) return error,
+else if bankConnected[balance] >= uint256(amount) then transferFromBank returns transferredFromBank;
+msg.sender[balance] + msg.sender(uint256(amount)[transferredFromBank]) = msg.sender[balance];   }
 
+transferToBank ={
+require(msg.sender == profileLoggedInto);
+require(msg.sender == bankConnected);
+msg.sender(transferFromBank) = bankConnected + uint256(amount),
+if msg.sender[balance] <= uint256(amount) return error,
+else if msg.sender[balance] >= uint256(amount) then transferToBank returns transferredToBank;
+msg.sender[balance] - msg.sender(uint256(amount)[transferredToBank]) = msg.sender[balance];  }
 
 
 
