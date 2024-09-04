@@ -37,14 +37,21 @@ accountNumber = 12 digit uint256(number);
 routingNumber = 9 digit uint256(number);
 username = ("string");
 password = ("string");
-
 if msg.sender[bankInformation] != (bankName + accountNumber + routingNumber + username + password) then return error,
 else if msg.sender[bankInformation] == (bankName + accountNumber + routingNumber + username + password) then connectBank returns bankConnected;  }
 
 
+connectSpendCard ={
+require(msg.sender == profileLoggedInto);
+require(msg.sender[spendCardInformation]);
+spendCardInformation = ( spendCardNumber + expirationDate + CVC + nameOnFile);
+spendCardNumber = 16 digit uint256(number);
+expirationDate = 2 digit uint256(number[month]) + 2 digit uint256(number[year]);
+CVC = 3 digit uint256(number);
+nameOnFile = ( firstName + lastName);
 
-
-
+if msg.sender[spendCardInformation ] != ( spendCardNumber + expirationDate + CVC + nameOnFile) then return error,
+else if msg.sender[spendCardInformation ] == ( spendCardNumber + expirationDate + CVC + nameOnFile) then connectSpendCard returns spendCardConnected;  }
 
 
 }
