@@ -1,7 +1,8 @@
 // SettingsScreen.js
 import React from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
-import { connectBank, connectCard}  from '.accountSettings/util.sol';
+import { connectBank, transferFromBank, transferToBank} from '.accountSettings/util.sol';
+  import {connectCard, transferFromCard, transferToCard}  from '.accountSettings/util.sol';
 
 export default function SettingsScreen() {
   return (
@@ -10,6 +11,9 @@ export default function SettingsScreen() {
       <Button title="Change Password" onPress={() => {}} />
       <Button title="Enable 2FA" onPress={() => {}} />
       <Button title="Notification Preferences" onPress={() => {}} />
+      <Button title="Connect Bank Account" onPress={() => {}} />
+      <Button title="Transfer To Bank Account" onPress={() => {}} />
+      <Button title="Connect Card" onPress={() => {}} />
     </View>
   );
 }
