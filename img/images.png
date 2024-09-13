@@ -1,6 +1,6 @@
-goateElectricLogo {
+import "./GerastyxLogo.png"; 
 
-}
+
 
 zeropointLogo {}
 zeropointWifiLogo {}
