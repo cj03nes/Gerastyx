@@ -1,5 +1,8 @@
 pragma solidity ^0.8.20;
 
+import ./Zeropoint.sol ;
+import ./ZeropointWifi.sol ;
+
 // chain to device
 mapping(chain) => mapping(device => mapping(deviceInformation) ) => deviceConnected;
 
