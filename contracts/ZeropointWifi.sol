@@ -19,7 +19,7 @@ contract ZeropointWifi is ERC20, ERC20Burnable, Ownable {
 
     function mint(address to, uint256 amount) public onlyOwner {
      require(deviceConnected);
-     require(deviceInformation);
+     require(deviceConnected[deviceInformation]);
      require(deviceConnected[Wi-Fi]);
      require(ERC20Burnable);
  
