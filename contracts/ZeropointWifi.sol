@@ -3,6 +3,8 @@ pragma solidity ^0.8.20;
 import "./openzeppelin/ERC20.sol";
 import "./openzeppelin/ERC20Burnable.sol";
 import "./openzeppelin/Ownable.sol";
+import {deviceConnected, deviceInformation,  } from "./DeviceConnect.sol";
+import {onlyOwner} from "../.env";
 
 contract ZeropointWifi is ERC20, ERC20Burnable, Ownable {
     constructor(address initialOwner)
