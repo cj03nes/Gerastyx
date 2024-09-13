@@ -1,9 +1,7 @@
 import "./GerastyxLogo.png"; 
+import "./ZeropointLogo";
+import "./ZeropointWifiLogo";
 
-
-
-zeropointLogo {}
-zeropointWifiLogo {}
 
 team1 {}
 
