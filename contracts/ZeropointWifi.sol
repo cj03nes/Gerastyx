@@ -1,4 +1,4 @@
-pragma solidity ^0.8.20;
+ropoinpragma solidity ^0.8.20;
 
 import "./openzeppelin/ERC20.sol";
 import "./openzeppelin/ERC20Burnable.sol";
@@ -22,13 +22,13 @@ contract ZeropointWifi is ERC20, ERC20Burnable, Ownable {
          _mint(to, amount);
 }
 
-function consume (address from, uint256 amount, deviceConnected Wi-Fi to) {
+function consumeZeropointWi-Fi (address from, uint256 amount, deviceConnected Wi-Fi to) {
      require(deviceConnected);
      require(deviceConnected[deviceInformation]);
      require(deviceConnected[Wi-Fi]);
      require(ERC20Burnable);
 
-        _consumeZeropointWi-Fi( from, amount, to);
+        _consumeZeropointWi-Fi(from, amount, to);
     
     }
 }
