@@ -6,6 +6,8 @@ import "./openzeppelin/Ownable.sol";
 import {deviceConnected, deviceInformation, batteryLevel } from "./DeviceConnect.sol";
 import {onlyOwner} from "../.env";
 
+mapping(chain => mapping(uint256 Zeropoint) => mapping(device => mapping(deviceInformation) ) => zeropointConsumedToDevice;
+
 contract Zeropoint is ERC20, ERC20Burnable, Ownable {
     constructor(address initialOwner)
         ERC20("Zeropoint", "ZP")
