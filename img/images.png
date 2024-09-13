@@ -1,29 +1,23 @@
 import "./GerastyxLogo.png"; 
 import "./ZeropointLogo";
 import "./ZeropointWifiLogo";
+import "./team1";
+import "./team2";
+import "./ChristianJones1";
+import "./ChristianJones2";
+import "./ChristianJones3";
+import "./ChristianJones4";
+import "./ChristianJones5";
+import "./ChristianJones6";
+import "./ChristianJones7";
+import "./ChristianJones8";
 
 
-team1 {}
 
-team2 {}
 
-christianJones1 {}
 
-christianJones2 {}
 
-christianJones3 {}
-
-christianJones4 {}
-
-christianJones5 {}
-
-christianJones6 {}
-
-christianJones7 {}
-
-christianJones8 {}
-
-christianJones9{}
+christianJones9
 
 M4RK5MAN1 {}
 
