@@ -1,36 +1,26 @@
-import "./GerastyxLogo.png"; 
-import "./ZeropointLogo";
-import "./ZeropointWifiLogo";
-import "./team1";
-import "./team2";
-import "./ChristianJones1";
-import "./ChristianJones2";
-import "./ChristianJones3";
-import "./ChristianJones4";
-import "./ChristianJones5";
-import "./ChristianJones6";
-import "./ChristianJones7";
-import "./ChristianJones8";
-import "./ChristianJones9";
+import "./GerastyxLogo.png" as {GerastyxLogo}; 
+import "./ZeropointLogo" as {ZeropointLogo};
+import "./ZeropointWifiLogo" as {ZeropointWifiLogo};
+import "./team1" as {team1};
+import "./team2" as {team2};
+import "./ChristianJones1" as {ChristianJones1};
+import "./ChristianJones2" as {ChristianJones2};
+import "./ChristianJones3" as {ChristianJones3};
+import "./ChristianJones4" as {ChristianJones4};
+import "./ChristianJones5" as {ChristianJones5};
+import "./ChristianJones6" as {ChristianJones6};
+import "./ChristianJones7" as {ChristianJones7};
+import "./ChristianJones8" as {ChristianJones8};
+import "./ChristianJones9" as {ChristianJones9};
+import "./M4RK5MAN1" as {M4RK5MAN1};
+import "./M4RK5MAN2" as {M4RK5MAN2};
+import "./M4RK5MAN3" as {M4RK5MAN3};
+import "./M4RK5MAN4" as {M4RK5MAN4};
+import "./M4RK5MAN5" as {M4RK5MAN5};
+import "./M4RK5MAN6" as {M4RK5MAN6};
+import "./M4RK5MAN7" as {M4RK5MAN7};
+import "./M4RK5MAN8" as {M4RK5MAN8};
+import "./M4RK5MAN9" as {M4RK5MAN9};
 
 
 
-
-
-M4RK5MAN1 {}
-
-M4RK5MAN2 {}
-
-M4RK5MAN3 {}
-
-M4RK5MAN4 {}
-
-M4RK5MAN5 {}
-
-M4RK5MAN6 {}
-
-M4RK5MAN7 {}
-
-M4RK5MAN8 {}
-
-M4RK5MAN9 {}
