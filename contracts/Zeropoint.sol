@@ -3,7 +3,8 @@ pragma solidity ^0.8.20;
 import "./openzeppelin/ERC20.sol";
 import "./openzeppelin/ERC20Burnable.sol";
 import "./openzeppelin/Ownable.sol";
-import "./DeviceConnect.sol";
+import {deviceConnected} from "./DeviceConnect.sol";
+import {onlyOwner} from "../.env";
 
 contract Zeropoint is ERC20, ERC20Burnable, Ownable {
     constructor(address initialOwner)
@@ -14,6 +15,15 @@ contract Zeropoint is ERC20, ERC20Burnable, Ownable {
     }
 
     function mint(address to, uint256 amount) public onlyOwner {
+      require(onlyOwner);
         _mint(to, amount);
     }
+
+   function consume( address from, uint256 amount, device to) public msg.sender {
+      require(deviceConnected);
+      require(ERC20Burnable);
+                               _consume(from, amount, to);
+}
+
+
 }
