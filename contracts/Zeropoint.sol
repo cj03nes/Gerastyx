@@ -25,7 +25,7 @@ contract Zeropoint is ERC20, ERC20Burnable, Ownable {
 
     function sell(   ) {      }
 
-   function consume( address from, uint256 amount, device to) public msg.sender {
+   function consume( address from, uint256 amount, deviceConnected[batteryLevel] to) public msg.sender {
       require(deviceConnected);
       require(deviceConnected[deviceInformation]);
       require(deviceConnected[batteryLevel]);
