@@ -13,7 +13,7 @@ mapping(chain => mapping(uint256 Zeropoint) => mapping(device => mapping(deviceI
 mapping(chain => mapping(uint256 ZeropointWifi) => mapping(device => mapping(deviceInformation) ) => zeropointwifiConsumedToDevice;
 
 
-contract DeviceConnect (public virtual view returns) ={
+contract DeviceConnect (public virtual view returns) {
 
 msg.sender(connectDevice) = get("modelName", " productName", "serialNumber", "IMEI", "batteryStatus", "batteryLevel", "batteryCapacity", "ipAddress", "phoneWifiMACAddress", "phoneNumber", "Wi-Fi", "APN", "MCC", "MNC", "APN Type", "APN Protocol", "APN roaming protocol", "Turn APN On/Off", "Mobile Network Operator Value", "Bluetooth Tethering" );
 modelName = mapping(Settings < About Phone < Model Name) then return "string";
