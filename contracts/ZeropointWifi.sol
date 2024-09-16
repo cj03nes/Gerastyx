@@ -1,4 +1,4 @@
-ropoinpragma solidity ^0.8.20;
+pragma solidity ^0.8.20;
 
 import "./openzeppelin/ERC20.sol";
 import "./openzeppelin/ERC20Burnable.sol";
