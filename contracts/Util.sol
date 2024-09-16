@@ -1,3 +1,5 @@
+pragma solidity ^0.8.20;
+
 import { Zeropoint } from "./Zeropoint.sol";
 import { ZeropointWifi } from "./Zeropoint.sol";
 
