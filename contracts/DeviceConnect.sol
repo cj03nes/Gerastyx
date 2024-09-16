@@ -1,8 +1,8 @@
 pragma solidity ^0.8.20;
 
-import "./Zeropoint.sol";
-import "./ZeropointWifi.sol";
-import { connectDevice , deviceConnected, deviceInformation } from "./Util.sol";
+import { consumeZeropoint, transfer, transactionLog } from "./Zeropoint.sol";
+import { consumeZeropointWifi, zeropointWifiConsumedToDevice, transfer, transactionLog } from  "./ZeropointWifi.sol";
+import { connectDevice , deviceConnected, deviceInformation, accountBalances } from "./Util.sol";
 
 // chain to device
 mapping(chain) => mapping(device => mapping(deviceInformation) ) => deviceConnected;
