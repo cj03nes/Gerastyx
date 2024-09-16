@@ -23,7 +23,7 @@ contract ZeropointWifi is ERC20, ERC20Burnable, Ownable {
          _mint(to, amount);
 }
 
-function consumeZeropointWi-Fi (address from, uint256 amount, deviceConnected Wi-Fi to) {
+function consumeZeropointWiFi (address from, uint256 amount, deviceConnected Wi-Fi to) {
      require(deviceConnected);
      require(deviceConnected[deviceInformation]);
      require(deviceConnected[Wi-Fi]);
