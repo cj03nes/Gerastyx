@@ -1,5 +1,10 @@
+import {Gerastyxlogo} from "../img/GerastyxLogo.png";
+import {ZeropointLogo}  from "../img/ZeropointLogo.png";
+import {ZeropointWifiLogo} from "../img/ZeropointWifi.png";
+
+
 <WelcomeScreen>
- <logo image> g¢ </logo>
+ <logo image> "../img/GerastyxLogo.png" </logo>
     <View style={styles.container}>
          <header style="background-color: #4B006E; color: #FFD700;">
       <Text style={styles.title}>WELCOME TO GERASTYX INDUSTRIES </Text>
