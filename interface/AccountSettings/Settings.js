@@ -18,7 +18,9 @@ import { accountBalance , amountUSD , amountZeropoint } from '../contacts/util.s
 
 
 
-< <SettingsScreen>
+
+
+   <SettingsScreen>
  <logo image> <container  > Gerastyx Industries  </container> </logo>
    
    
@@ -32,8 +34,40 @@ import { accountBalance , amountUSD , amountZeropoint } from '../contacts/util.s
      
 </View>
 
+<View>
+    <Header style="
+    position: auto;
+    margin-top: 10%
+    margin-left: 90%
+    transform: translateX(-0%);
+   
+    ">
+        <profileCreated logo style="
+        
+        .image-round{
+  border-radius: 50%;
+  position:relative;
+  width:20%;
+  padding-bottom:20%;
+  border-radius:50%;
+  overflow:hidden;
+  position:absolute;
+  object-fit: cover;
+  width:100%;height:100%;
+  border-radius: 50%;     "> 
+        Image Here
+        </profileCreated>
+        
+        
+    </Header>
+    
+</View>
 
-<Main style = "background-color: #6699CC; color: #000000;">
+
+<Main style = "
+background-color: #6699CC; 
+color: #000000; 
+font-size: 8px;">
  
  <h1> Account Settings
   <Button style =
@@ -167,4 +201,7 @@ onPress={(connectSpendCard)}
 
         </SettingsScreen>
 
+
+
+      
 
