@@ -25,10 +25,10 @@ import {ZeropointWifiLogo} from "../img/ZeropointWifi.png";
 
 
     <h1> Products </h1>
-    <h3> <li>   Zeropoint </h3> Digital Energy that charges digital electronics wirelessly with the click of a button for $10 or ¢10 per 1% of battery charge. 
+    <h3> <li>   Zeropoint <logo image> <container> ZPLogo</container></logo></h3> Digital Energy that charges digital electronics wirelessly with the click of a button for $10 or ¢10 per 1% of battery charge. 
      
      
-    <h3>  <li> ZeropointWifi </h3> 
+    <h3>  <li> ZeropointWifi <logo image> <container> WZPLogo</container></logo></h3> 
      Digital Wifi that keeps digital electronics connected to wifi wirelessly for $5 a month
     
     
@@ -51,4 +51,3 @@ import {ZeropointWifiLogo} from "../img/ZeropointWifi.png";
                 <p>X: OpenAI</p>
                 <!-- Encircling Pictures will be added dynamically here -->
             
-    
