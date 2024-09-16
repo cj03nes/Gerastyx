@@ -7,7 +7,7 @@ import { connectDevice, deviceConnected, deviceInformation, Wi-Fi } from "./Devi
 import { onlyOwner } from "../.env";
 import { ZeropointWifi, transactionLog } from "./Util.sol";
 
-mapping(chain => mapping(uint256 ZeropointWifi) => mapping(device => mapping(deviceInformation) ) => zeropointwifiConsumedToDevice;
+mapping(chain => mapping(uint256 ZeropointWifi) => mapping(device => mapping(deviceInformation) ) => zeropointWifiConsumedToDevice;
 
 
 contract ZeropointWifi is ERC20, ERC20Burnable, Ownable {
@@ -23,13 +23,13 @@ contract ZeropointWifi is ERC20, ERC20Burnable, Ownable {
          _mint(to, amount);
 }
 
-function consumeZeropointWiFi (address from, uint256 amount, deviceConnected Wi-Fi to) {
+function consumeZeropointWiFi (address from, uint256 amount, deviceConnected WiFi to) {
      require(deviceConnected);
      require(deviceConnected[deviceInformation]);
-     require(deviceConnected[Wi-Fi]);
+     require(deviceConnected[WiFi]);
      require(ERC20Burnable);
 
-        _consumeZeropointWi-Fi(from, amount, to);
+        _consumeZeropointWiFi(from, amount, to);
     
     }
 }
