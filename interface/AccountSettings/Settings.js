@@ -3,7 +3,7 @@ import React from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
 import { createProfile ,profileCreated } from '../contacts/util.sol';
 import { loginToProfile ,profileLoggedInto } from '../contacts/util.sol';
-import { forgotPassword , passwordChanged } from '../contacts/util.sol';
+import { forgotPassword , changePassword, passwordChanged } from '../contacts/util.sol';
 import { connectCard , cardConnected } from '../contacts/util.sol';
 import { transferFromCard , transferredFromCard } from '../contacts/util.sol';
 import { transferToCard , transferredToCard } from '../contacts/util.sol';
