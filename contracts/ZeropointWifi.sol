@@ -15,7 +15,7 @@ contract ZeropointWifi is ERC20, ERC20Burnable, Ownable {
         ERC20("ZeropointWifi", "WZP")
         Ownable(initialOwner)
     {
-          _mint(msg.sender, 1000000000 * 10 ** decimals());
+          _mint(msg.sender, 1000000000 * 10 ** decimals() );
     }
 
     function mint(address to, uint256 amount) public onlyOwner {
@@ -23,7 +23,7 @@ contract ZeropointWifi is ERC20, ERC20Burnable, Ownable {
          _mint(to, amount);
 }
 
-function buyZeropointWifi( msg.sender address , uint256 USD(amount), uint256 ZeropointWifi(amount) {
+function buyZeropointWifi( msg.sender address , uint256 USD(amount), uint256 ZeropointWifi(amount) ){
       require(msg.sender == profileLoggedInto);
       require(msg.sender[USDbalance]);
       require(msg.sender[ZeropointBalance]);
@@ -40,7 +40,7 @@ amountZeropointWifiToBuyAndConsume = ( uint256(amountUSDToBuyZeropointWifi) || u
 msg.sender(ZeropointBalance || USDbalance) - msg.sender(amountUSDToBuyZeropointWifi || amountZeropointToBuyZeropointWifi) = msg.sender(ZeropointBalance || USD Balance);
 privateOwner(USDbalance2) + msg.sender(uint256(amountUSDToBuyZeropointWifi) || uint256(amountZeropointToBuyZeropointWifi) %2) = privateOwner(USDbalance2) ;
 privateOwner(USDbalance1) + msg.sender(uint256(amountUSDToBuyZeropointWifi) || uint256(amountZeropointToBuyZeropointWifi) %2) = privateOwner(USDbalance1) ; 
-                        _buyZeropointWifi( address, USD(amount), ZeropointWifi(amount);
+                        _buyZeropointWifi( address, USD(amount), ZeropointWifi(amount));
 if msg.sender _buyZeropointWifi returns true,
 then return async function consumeZeropointWiFi (address from, uint256 amount, deviceConnected WiFi to) {
      require(deviceConnected);
@@ -51,4 +51,7 @@ then return async function consumeZeropointWiFi (address from, uint256 amount, d
                         _consumeZeropointWiFi(from, amount, to);
     
     }
+                    }
+
+
 }
