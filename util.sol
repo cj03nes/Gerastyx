@@ -1,4 +1,4 @@
-contract Goate Electric {
+contract Gerastyx {
 
 accountSettings (
 createProfile => profileCreated,
