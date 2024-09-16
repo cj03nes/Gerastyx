@@ -25,8 +25,12 @@ export default function SettingsScreen() {
       <Button title="Enable 2FA" onPress={() => {}} />
       <Button title="Notification Preferences" onPress={() => {}} />
       <Button title="Connect Bank Account" onPress={() => {}} />
+      <Button title="Connect Bank Account" onPress={() => {}} />
       <Button title="Transfer To Bank Account" onPress={() => {}} />
       <Button title="Connect Card" onPress={() => {}} />
+      <Button title="Transfer To Card" onPress={() => {}} />
+      <Button title="Connect Spend Card" onPress={() => {}} />
+      <Button title="Transfer To Spend Card" onPress={() => {}} />
     </View>
   );
 }
