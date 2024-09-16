@@ -15,13 +15,13 @@ import { purchaseWithSpendCard , purchasedWithSpendCard } from '../contacts/util
 import { spendCardAtm , receivedFromATM } from '../contacts/util.sol';
 import { connectDevice , deviceConnected } from '../contacts/util.sol';
 import { accountBalance , amountUSD , amountZeropoint } from '../contacts/util.sol';
-
+import {Gerastyxlogo} from "../img/GerastyxLogo.png";
 
 
 
 
    <SettingsScreen>
- <logo image> <container  > Gerastyx Industries  </container> </logo>
+ <logo image> <container  > Gerastyxlogo  </container> </logo>
    
    
    
