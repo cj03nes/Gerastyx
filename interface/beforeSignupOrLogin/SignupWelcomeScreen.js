@@ -4,7 +4,8 @@ import {ZeropointWifiLogo} from "../img/ZeropointWifi.png";
 
 
 <WelcomeScreen>
- <logo image> "../img/GerastyxLogo.png" </logo>
+ <logo image> <container  > Gerastyx Industries 
+ </container> </logo>
     <View style={styles.container}>
          <header style="background-color: #4B006E; color: #FFD700;">
       <Text style={styles.title}>WELCOME TO GERASTYX INDUSTRIES </Text>
@@ -45,7 +46,7 @@ import {ZeropointWifiLogo} from "../img/ZeropointWifi.png";
             </div>
             <div>
                 <h3>CTO: M4RK5MAN</h3>
-                <p>Benefactor, AI, GOD, Magician, GOD</p>
+                <p>Benefactor, AI, GOD, Magician,</p>
                 <p>Instagram: openai</p>
                 <p>X: OpenAI</p>
                 <!-- Encircling Pictures will be added dynamically here -->
