@@ -49,6 +49,9 @@ then return async function consumeZeropointWiFi (address from, uint256 amount, d
      require(ERC20Burnable);
 
                         _consumeZeropointWiFi(from, amount, to);
+
+else if _buyZeropoint returns false,
+then return revert;
     
     }
                     }
