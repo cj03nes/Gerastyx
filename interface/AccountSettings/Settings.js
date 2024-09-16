@@ -28,52 +28,96 @@ import { accountBalance , amountUSD , amountZeropoint } from '../contacts/util.s
          <Header style="background-color: #4B006E; color: #FFD700;">
       <Text style={styles.title}>GI Settings </Text> </Header>
       
-
-
-
-<Main style = "background-color: #6699CC; color: #FFD700;">
-
-
-  
-  <Button styles:"
-background-color: #6699CC;
-color:#FFD700 ;
-font: ;
-margin-top: ;
-position: auto;
-left: 50%;
-title: connectSpendCard;
-onPress={(connectSpendCard)}"> 
-Connect Your Card To Spend With
-
- 
-
-
-</Button>     
- <Button title="connectSpendCard" onPress={() => Connect Card To Spend With   </Button>
+      
      
+</View>
 
 
-          </SettingsScreen>
+<Main style = "background-color: #6699CC; color: #000000;">
+ 
+ <H1> Account Settings
+  <Button style =
+  "background-color: #FFD700; 
+  color: #4B006E;
+  font-family: Roman, serif;
+  margin-top: auto ;
+position: auto;
+left: 70%;
+title: connectSpendCard;
+onPress={(connectSpendCard)}
+  ">ytjreikjyyjkedtyyjyt   </Button>  </H1>
+    
+  
+  
+   <Button style =
+  "background-color: #FFD700; 
+  color: #4B006E;
+  font-family: Roman, serif;
+  margin-top: auto ;
+position: auto;
+left: 70%;
+title: connectSpendCard;
+onPress={(connectSpendCard)}
+  ">ytjreikjyyjkedtyyjyt   </Button>
+  
+   <Button style =
+  "background-color: #FFD700; 
+  color: #4B006E;
+  font-family: Roman, serif;
+  margin-top: auto ;
+position: auto;
+left: 70%;
+title: connectSpendCard;
+onPress={(connectSpendCard)}
+  ">ytjreikjyyjkedtyyjyt   </Button>
+  
+   <Button style =
+  "background-color: #FFD700; 
+  color: #4B006E;
+  font-family: Roman, serif;
+  margin-top: auto ;
+position: auto;
+left: 70%;
+title: connectSpendCard;
+onPress={(connectSpendCard)}
+  ">ytjreikjyyjkedtyyjyt   </Button>
+  
+   <Button style =
+  "background-color: #FFD700; 
+  color: #4B006E;
+  font-family: Roman, serif;
+  margin-top: auto ;
+position: auto;
+left: 70%;
+title: connectSpendCard;
+onPress={(connectSpendCard)}
+  ">ytjreikjyyjkedtyyjyt   </Button>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<Button style =
+"background-color: #FFD700; 
+color: #4B006E;
+font-family: Roman, serif;
+margin-top: auto;
+position: auto;
+left: 90%;
+title: connectSpendCard;
+onPress={(connectSpendCard)}
+  ">abcdefghijklmnopqrstuvwxyz   </Button>
+    
+    
+    
+    </Main>
 
-export default function SettingsScreen() {
-  return (
-    <View style={styles.container}>
-      <Text>Settings</Text>
-      <Button title="Change Password" onPress={() => {}} />
-      <Button title="Enable 2FA" onPress={() => {}} />
-      <Button title="Notification Preferences" onPress={() => {}} />
-      <Button title="Connect Bank Account" onPress={() => {}} />
-      <Button title="Connect Bank Account" onPress={() => {}} />
-      <Button title="Transfer To Bank Account" onPress={() => {}} />
-      <Button title="Connect Card" onPress={() => {}} />
-      <Button title="Transfer To Card" onPress={() => {}} />
-      <Button title="Connect Spend Card" onPress={() => {}} />
-      <Button title="Transfer To Spend Card" onPress={() => {}} />
-    </View>
-  );
-}
 
-const styles = StyleSheet.create({
-  container: { flex: 1, justifyContent: 'center', alignItems: 'center' },
-});
+        </SettingsScreen>
+
