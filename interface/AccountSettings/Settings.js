@@ -18,24 +18,43 @@ import { accountBalance , amountUSD , amountZeropoint } from '../contacts/util.s
 
 
 
- <Button title="accountInfo" onPress={() => Account Settings    </Button>
+<SettingsScreen>
+ <logo image> <container  > Gerastyx Industries  </container> </logo>
+   
+   
+   
+   
+    <View style={styles.container}>
+         <Header style="background-color: #4B006E; color: #FFD700;">
+      <Text style={styles.title}>GI Settings </Text> </Header>
+      
+
+
+
+<Main style = "background-color: #6699CC; color: #FFD700;">
+
+
+  
+  <Button styles:"
+background-color: #6699CC;
+color:#FFD700 ;
+font: ;
+margin-top: ;
+position: auto;
+left: 50%;
+title: connectSpendCard;
+onPress={(connectSpendCard)}"> 
+Connect Your Card To Spend With
+
  
-  <Button title="changePassword" onPress={() => Change Password    </Button>
-     
-     
-    <Button title="connectBank" onPress={() => Connect Bank Acount   </Button> 
-    
-     <Button title="transferToBank" onPress={() => Transfer To Your Bank Account   </Button>
-     
-     <Button title="connectCard " onPress={() => Connect TopUp Card   </Button>
-     
-     <Button title="transferToCard" onPress={() => Tranfer To Your TopUp Card  </Button>
-     
-     <Button title="connectSpendCard" onPress={() => Connect Card To Spend With   </Button>
+
+
+</Button>     
+ <Button title="connectSpendCard" onPress={() => Connect Card To Spend With   </Button>
      
 
 
-
+          </SettingsScreen>
 
 export default function SettingsScreen() {
   return (
