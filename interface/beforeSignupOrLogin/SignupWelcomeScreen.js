@@ -4,7 +4,7 @@ import {ZeropointWifiLogo} from "../img/ZeropointWifi.png";
 
 
 <WelcomeScreen>
- <logo image> <container  > "../img/ZeropointLogo.png" 
+ <logo image> <container  > "../img/GerastyxLogo.png" 
  </container> </logo>
     <View style={styles.container}>
          <header style="background-color: #4B006E; color: #FFD700;">
