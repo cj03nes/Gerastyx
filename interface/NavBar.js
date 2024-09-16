@@ -1,1 +1,9 @@
 
+
+NavBar ={
+
+  Home,
+  Transfer,
+  Settings
+
+}
