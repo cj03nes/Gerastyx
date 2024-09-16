@@ -1,6 +1,20 @@
 contract Goate Electric {
 
-accountSettings{
+accountSettings (
+createProfile => profileCreated,
+loginToProfile => profileLoggedInto,
+forgotPassword => passwordChanged,
+connectCard => cardConnected,
+transferFromCard => transferredFromCard,
+transferToCard => transferredToCard,
+connectBank => bankConnected,
+transferFromBank => transferredFromBank,
+transferToBank => transferredToBank,
+connectSpendCard => spendCardConnected,
+purchaseWithSpendCard => purchasedWithSpendCard,
+spendCardAtm => receivedFromATM,
+connectDevice => deviceConnected,
+accountBalance => amountUSD && amountZeropoint)  { 
 
 createProfile ={ 
 msg.sender( username + password + emailAddress || phoneNumber ),
@@ -11,7 +25,6 @@ if msg.sender(verificationCode) != verificationCode then return errror,
 else if msg.sender(vericationCode) == vericationCode then createProfile returns profileCreated;   }
 
 loginToProfile ={
-
 if msg.sender( username || emailAdress || phoneNumber ) == profileCreated, then require msg.sender(username + password);
 if username || password != profileCreated then return error,
 else if username && password == profileCreated then loginToProfile returns profileLoggedInto;   }
@@ -173,6 +186,15 @@ if msg.sender(USDbalance) = 100 && msg.sender(ZeropointBalance) = 100,
 then msg.sender(accountBalances) = 100USD && 100Zeropoint;  }
  }
 
+
+appFunctionality (
+buyZeropoint => amountZeropointBought,
+sellZeropoint => amountZeropointSelling,
+consumeZeropoint => ZeropointConsumed,
+buyZeropointWifi => amountUSDToBuyZeropointWifi &| amountZeropointToBuyZeropointWifi,
+transfer => amountUSDTransferred &| amountZeropointTransferred,
+transactionLog => accountActivity) {
+
 buyZeropoint ={
 require(msg.sender == profileLoggedInto);
 require(msg.sender[USDbalance]);
@@ -238,7 +260,7 @@ else if msg.sender(USDbalance || ZeropointBalance) > ( amountUSDToBuyZeropointWi
 1 ZeropointWifiPrice = 50 Zeropoint;
 1 ZeropointWifi = 30 days(Wifi);
 amountZeropointWifiToBuyAndConsume = ( uint256(amountUSDToBuyZeropointWifi) || uint256(amountZeropointToBuyZeropointWifi) ) % ZeropointPrice;
-msg.sender(ZeropointBalance || USDbalance) - msg.sender(amountUSDToBuyZeropointWif || amountZeropointToBuyZeropointWifi) = msg.sender(ZeropointBalance || USD Balance);
+msg.sender(ZeropointBalance || USDbalance) - msg.sender(amountUSDToBuyZeropointWifi || amountZeropointToBuyZeropointWifi) = msg.sender(ZeropointBalance || USD Balance);
 privateOwner(USDbalance2) + msg.sender(uint256(amountUSDToBuyZeropointWifi) || uint256(amountZeropointToBuyZeropointWifi) %2) = privateOwner(USDbalance2) ;
 privateOwner(USDbalance1) + msg.sender(uint256(amountUSDToBuyZeropointWifi) || uint256(amountZeropointToBuyZeropointWifi) %2) = privateOwner(USDbalance1) ;  }
 
