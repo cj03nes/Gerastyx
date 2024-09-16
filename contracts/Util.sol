@@ -2,6 +2,7 @@ pragma solidity ^0.8.20;
 
 import { Zeropoint } from "./Zeropoint.sol";
 import { ZeropointWifi } from "./Zeropoint.sol";
+import { connectDevice , deviceConnected, deviceInformation } from "./DeviceConnect.sol";
 
 
 contract Gerastyx (public internal virtual view returns) {
