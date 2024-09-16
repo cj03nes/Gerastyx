@@ -1,5 +1,5 @@
-import { Zeropoint } from "./Zerpoint.sol";
-import { ZeropointWifi } from "./Zerpoint.sol";
+import { Zeropoint } from "./Zeropoint.sol";
+import { ZeropointWifi } from "./Zeropoint.sol";
 
 
 contract Gerastyx (public internal virtual view returns) {
