@@ -3,8 +3,9 @@ pragma solidity ^0.8.20;
 import "./openzeppelin/ERC20.sol";
 import "./openzeppelin/ERC20Burnable.sol";
 import "./openzeppelin/Ownable.sol";
-import {deviceConnected, deviceInformation, batteryLevel } from "./DeviceConnect.sol";
-import {onlyOwner} from "../.env";
+import { deviceConnected, deviceInformation, batteryLevel } from "./DeviceConnect.sol";
+import { onlyOwner } from "../.env";
+import { buyZeropoint, sellZeropoint, consumeZeropoint, transfer, transactionLog } from "./Util.sol";
 
 mapping(chain => mapping(uint256 Zeropoint) => mapping(device => mapping(deviceInformation) ) => zeropointConsumedToDevice;
 
