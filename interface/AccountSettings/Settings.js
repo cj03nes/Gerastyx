@@ -18,7 +18,7 @@ import { accountBalance , amountUSD , amountZeropoint } from '../contacts/util.s
 
 
 
-<SettingsScreen>
+< <SettingsScreen>
  <logo image> <container  > Gerastyx Industries  </container> </logo>
    
    
@@ -35,7 +35,7 @@ import { accountBalance , amountUSD , amountZeropoint } from '../contacts/util.s
 
 <Main style = "background-color: #6699CC; color: #000000;">
  
- <H1> Account Settings
+ <h1> Account Settings
   <Button style =
   "background-color: #FFD700; 
   color: #4B006E;
@@ -43,12 +43,81 @@ import { accountBalance , amountUSD , amountZeropoint } from '../contacts/util.s
   margin-top: auto ;
 position: auto;
 left: 70%;
-title: connectSpendCard;
-onPress={(connectSpendCard)}
-  ">ytjreikjyyjkedtyyjyt   </Button>  </H1>
+title: accountSettings;
+onPress={(accountSettings)}
+  "> Account Information   </Button> 
+  
+  
+   <Button style =
+  "background-color: #FFD700; 
+  color: #4B006E;
+  font-family: Roman, serif;
+  margin-top: auto ;
+position: auto;
+left: 70%;
+title: changePassword;
+onPress={(changePassword)}
+  "> Change Password   </Button>
+  
+  
+  
+  </h1>
     
   
+  <h1> Connect Your Bank
+   <Button style =
+  "background-color: #FFD700; 
+  color: #4B006E;
+  font-family: Roman, serif;
+  margin-top: auto ;
+position: auto;
+left: 70%;
+title: connectBank;
+onPress={(connectBank)}
+  "> Connect Bank Account  </Button> 
   
+  <Button style =
+  "background-color: #FFD700; 
+  color: #4B006E;
+  font-family: Roman, serif;
+  margin-top: auto ;
+position: auto;
+left: 70%;
+title: transferToBank;
+onPress={(transferToBank)}
+  "> Transfer To Your Bank Account   </Button>    </h1>
+  
+  
+
+  
+  
+    <h1> Connect Your Card
+   <Button style =
+  "background-color: #FFD700; 
+  color: #4B006E;
+  font-family: Roman, serif;
+  margin-top: auto ;
+position: auto;
+left: 70%;
+title: connectCard;
+onPress={(connectCard)}
+  "> Connect Your Card   </Button>   
+  
+  
+   <Button style =
+  "background-color: #FFD700; 
+  color: #4B006E;
+  font-family: Roman, serif;
+  margin-top: auto ;
+position: auto;
+left: 70%;
+title: transferToCard;
+onPress={(transferToCard)}
+  "> Transfer To Your Card   </Button>   </h1>
+  
+  
+ 
+  <h1> Spend Card
    <Button style =
   "background-color: #FFD700; 
   color: #4B006E;
@@ -58,8 +127,10 @@ position: auto;
 left: 70%;
 title: connectSpendCard;
 onPress={(connectSpendCard)}
-  ">ytjreikjyyjkedtyyjyt   </Button>
+  "> Connect Your Spend Card   </Button>   </h1>
   
+  
+  <h1> Wat Next
    <Button style =
   "background-color: #FFD700; 
   color: #4B006E;
@@ -69,29 +140,7 @@ position: auto;
 left: 70%;
 title: connectSpendCard;
 onPress={(connectSpendCard)}
-  ">ytjreikjyyjkedtyyjyt   </Button>
-  
-   <Button style =
-  "background-color: #FFD700; 
-  color: #4B006E;
-  font-family: Roman, serif;
-  margin-top: auto ;
-position: auto;
-left: 70%;
-title: connectSpendCard;
-onPress={(connectSpendCard)}
-  ">ytjreikjyyjkedtyyjyt   </Button>
-  
-   <Button style =
-  "background-color: #FFD700; 
-  color: #4B006E;
-  font-family: Roman, serif;
-  margin-top: auto ;
-position: auto;
-left: 70%;
-title: connectSpendCard;
-onPress={(connectSpendCard)}
-  ">ytjreikjyyjkedtyyjyt   </Button>
+  ">ytjreikjyyjkedtyyjyt   </Button>  </h1>
   
   
   
@@ -99,10 +148,7 @@ onPress={(connectSpendCard)}
   
   
   
-  
-  
-  
-  
+    <h1> Wat Next 2
 <Button style =
 "background-color: #FFD700; 
 color: #4B006E;
@@ -112,7 +158,7 @@ position: auto;
 left: 90%;
 title: connectSpendCard;
 onPress={(connectSpendCard)}
-  ">abcdefghijklmnopqrstuvwxyz   </Button>
+  ">abcdefghijklmnopqrstuvwxyz   </Button>  </h1>
     
     
     
@@ -120,4 +166,5 @@ onPress={(connectSpendCard)}
 
 
         </SettingsScreen>
+
 
