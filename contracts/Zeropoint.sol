@@ -22,7 +22,7 @@ contract Zeropoint is ERC20, ERC20Burnable, Ownable {
         _mint(to, amount);
     }
 
-    function buy( msg.sender who, uint256 USD(amount) usingToBuy, uint256 Zeropoint(amount) zeropointBought  ) {  
+    function buyZeropoint( msg.sender who, uint256 USD(amount) usingToBuy, uint256 Zeropoint(amount) zeropointBought  ) {  
       require(msg.sender[USDbalance]);
       require(msg.sender[ZeropointBalance]);
       require(privateOwner[USDbalance2]);
@@ -36,12 +36,12 @@ if msg.sender(uint256[amountUSDBuyingZeropointWith]) = $5USD; then $5USD % $0.10
 msg.sender(USDbalance) - msg.sender(amountUSDBuyingZeropointWith) = msg.sender(USDbalance);
 msg.sender(ZeropointBalance) + msg.sender(amountZeropointBought) = msg.sender(ZeropointBalance);
 privateOwner(USDbalance2) + msg.sender(amountUSDBuyingZeropointWith) = privateOwner(USDbalance2);
-         _buy( who, usingToBuy, zeropointBought);
+         _buyZeropoint( who, usingToBuy, zeropointBought);
 
 
 }
 
-    function sell( msg.sender who, uint256 Zeropoint(amount) zeropointSold, uint256 USD(amount) usdReturned  ) {
+    function sellZeropoint( msg.sender who, uint256 Zeropoint(amount) zeropointSold, uint256 USD(amount) usdReturned  ) {
       require(msg.sender[USDbalance]);
       require(msg.sender[ZeropointBalance]);
       require(privateOwner[USDbalance2]);
@@ -55,11 +55,11 @@ $5 USD = uint256(amountZeropointSoldInUSD);
 msg.sender(ZeropointBalance) - msg.sender(amountZeropointSelling) = msg.sender(ZeropointBalance);
 msg.sender(USDbalance) + msg.sender(amountZeropointSoldInUSD) = msg.sender(USDbalance);
 privateOwner(USDbalance2) - msg.sender(amountZeropointSoldInUSD) = privateOwner(USDbalance2); 
-         _sell(who, zeropointSold, usdReturned);
+         _sellZeropoint(who, zeropointSold, usdReturned);
 
 }
 
-   function consume( address from, uint256 amount, deviceConnected batteryLevel deviceTo) public msg.sender {
+   function consumeZeropoint( address from, uint256 amount, deviceConnected batteryLevel deviceTo) public msg.sender {
       require(msg.sender[USDbalance]);
       require(msg.sender[ZeropointBalance]);
       require(deviceConnected);
@@ -78,7 +78,7 @@ deviceConnected(balance) !> 98%;
 msg.sender(amountZeropointToConsume) * $0.10USD = msg.sender(amountZeropointToConsumeInUSD);
 privateOwner(USDbalance2) - msg.sender(amountZeropointToConsumeInUSD) = privateOwner(USDbalance2) ;
 privateOwner(USDbalance1) + msg.sender(amountZeropointToConsumeInUSD) = privateOwner(USDbalance1) ;  
-                               _consume(from, amount, deviceTo);
+                               _consumeZeropoint(from, amount, deviceTo);
 
 }
 
