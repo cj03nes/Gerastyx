@@ -21,7 +21,7 @@ import {GerastyxLogo} from "../img/GerastyxLogo.png";
 
 
    <SettingsScreen>
- <logo image> <container  > Gerastyxlogo  </container> </logo>
+ <logo image src= "../img/GerastyxLogo.png"> <container  > GerastyxLogo  </container> </logo>
    
    
    
