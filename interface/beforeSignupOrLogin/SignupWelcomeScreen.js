@@ -1,10 +1,10 @@
-import {Gerastyxlogo} from "../img/GerastyxLogo.png";
+import {GerastyxLogo} from "../img/GerastyxLogo.png";
 import {ZeropointLogo}  from "../img/ZeropointLogo.png";
 import {ZeropointWifiLogo} from "../img/ZeropointWifi.png";
 
 
 <WelcomeScreen>
- <logo image> <container  > "../img/GerastyxLogo.png" 
+ <logo image src = "../img/GerastyxLogo.png" > <container  > GerastyxLogo 
  </container> </logo>
     <View style={styles.container}>
          <header style="background-color: #4B006E; color: #FFD700;">
