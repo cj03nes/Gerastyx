@@ -15,7 +15,7 @@ import { purchaseWithSpendCard , purchasedWithSpendCard } from '../contacts/util
 import { spendCardAtm , receivedFromATM } from '../contacts/util.sol';
 import { connectDevice , deviceConnected } from '../contacts/util.sol';
 import { accountBalance , amountUSD , amountZeropoint } from '../contacts/util.sol';
-import {Gerastyxlogo} from "../img/GerastyxLogo.png";
+import {GerastyxLogo} from "../img/GerastyxLogo.png";
 
 
 
