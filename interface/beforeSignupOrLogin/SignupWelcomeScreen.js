@@ -1,6 +1,6 @@
-import {GerastyxLogo} from "../img/GerastyxLogo.png";
-import {ZeropointLogo}  from "../img/ZeropointLogo.png";
-import {ZeropointWifiLogo} from "../img/ZeropointWifi.png";
+import "../img/GerastyxLogo.png" as {GerastyxLogo};
+import "../img/ZeropointLogo.png" as {ZeropointLogo} ;
+import "../img/ZeropointWifiLogo.png" as {ZeropointWifiLogo};
 
 
 <WelcomeScreen>
@@ -25,10 +25,10 @@ import {ZeropointWifiLogo} from "../img/ZeropointWifi.png";
 
 
     <h1> Products </h1>
-    <h3> <li>   Zeropoint <logo image> <container> ZPLogo</container></logo></h3> Digital Energy that charges digital electronics wirelessly with the click of a button for $10 or ¢10 per 1% of battery charge. 
+    <h3> <li>   Zeropoint <logo image src= "../img/ZeropointLogo.png"> <container> ZeropointLogo </container></logo></h3> Digital Energy that charges digital electronics wirelessly with the click of a button for $10 or ¢10 per 1% of battery charge. 
      
      
-    <h3>  <li> ZeropointWifi <logo image> <container> WZPLogo</container></logo></h3> 
+    <h3>  <li> ZeropointWifi <logo image src= "../img/ZeropointWifiLogo.png"> <container> ZeropointWifiLogo </container></logo></h3> 
      Digital Wifi that keeps digital electronics connected to wifi wirelessly for $5 a month
     
     
