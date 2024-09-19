@@ -7,7 +7,7 @@ import { connectDevice , deviceConnected, deviceInformation } from "./DeviceConn
 
 contract Gerastyx (public internal virtual view returns) {
 
-accountSettings =
+accountSettings ={
 (createProfile => profileCreated,
 loginToProfile => profileLoggedInto,
 forgotPassword => passwordChanged,
