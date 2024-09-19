@@ -1,3 +1,6 @@
+import "../images/GerastyxLogo.png" as {GerastyxLogo} ;
+
+
 //logo => top far left
 // Gerasty => next to logo
 // Navigation => top far right
@@ -12,7 +15,7 @@
 background-color: #4B006E; 
 color: #FFD700;">
     
-   <img src= "    "/>{ }
+   <img src= " '../images/GerastyxLogo.png'    "/>{ }
     
       <text style="
       margin-left: 250px;"> <b> GERASTYX INDUSTRIES</b>  </text>
