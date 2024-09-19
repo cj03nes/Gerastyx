@@ -1,6 +1,6 @@
 import "../images/GerastyxLogo.png";
 import { createProfile ,profileCreated, loginToProfile, profileLoggedInto } from "../contracts/Util.sol";
-
+import { accountSettings } from "../comtracts/Util.sol";
 
 
 //logo => top far left
