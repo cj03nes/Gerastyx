@@ -1,10 +1,18 @@
-import "../images/GerastyxLogo.png" as {GerastyxLogo} ;
+import "../images/GerastyxLogo.png";
+import { createProfile ,profileCreated, loginToProfile, profileLoggedInto } from "../contracts/Util.sol";
+
 
 
 //logo => top far left
 // Gerasty => next to logo
+
+
+
 // Navigation => top far right
 //Login => next to navbar
+
+
+
 // Account Info => next to login only if logged in
 
 
