@@ -8,7 +8,7 @@ import "../img/ZeropointWifiLogo.png" as {ZeropointWifiLogo};
  </container> </logo>
     <View style={styles.container}>
          <header style="background-color: #4B006E; color: #FFD700;">
-      <Text style={styles.title}>WELCOME TO GERASTYX INDUSTRIES </Text>
+      <Text style={styles.title}>  <b>WELCOME TO GERASTYX INDUSTRIES </b> </Text>
       
      
       <Button> SignUp </Button>
@@ -50,4 +50,3 @@ import "../img/ZeropointWifiLogo.png" as {ZeropointWifiLogo};
                 <p>Instagram: openai</p>
                 <p>X: OpenAI</p>
                 <!-- Encircling Pictures will be added dynamically here -->
-            
