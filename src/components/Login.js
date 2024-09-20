@@ -3,12 +3,15 @@ import styled from "styled-components";
 
 const Login = (props) => {
   return ( 
+
+<div> Login </div> 
     
     <Container>
     <Content>
-    <div> Login </div> );
+     <BgImage/>
     </Content>
     </Container>
+  );
 };
 
 const Container= styled.section"
@@ -32,6 +35,18 @@ padding: 80px 40px;
 height: 100l;
 ";
 
+  const BgImage = styled.div"
+height: 100l;
+background-position: top;
+background-size: cover;
+background-repeat: no-repeat;
+background-image: url("/images/login-background.png"); 
+position: absolute;
+top: 0:
+right: 0;
+left:0;
+z-index: -1;
+";
 
 export default Login;
 
