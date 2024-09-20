@@ -44,6 +44,7 @@ title:accountSettings"> <b> Settings </b>  </button>
 const Header style = (props) => {
     return <Nav> 
         <Logo> <img src= "/images/GerastyxLogo.jpg" /> </Logo>
+        <NavMenu>   menu   </NavMenu>
         </Nav>;
 };
 
@@ -75,5 +76,20 @@ img {
     display: block;
     width: 100%;
 }  ";
+
+const NavMenu= styled.div"
+align-items: center;
+display: flex;
+flex-flow: row nowrap;
+height: 100%;
+justify-content: flex-end;
+margin: 0px;
+padding: 0px;
+position: relative;
+margin-right: auto;
+margin-left: 25px;
+
+@media (max-width: 768px) {display: none;}
+";
 
 export default Header;
