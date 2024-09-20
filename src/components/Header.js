@@ -119,6 +119,7 @@ border-radius: 0px 0px 4px 4px;
 bottom: -6px;
 content: "";
 height: 2px;   
+left: 0px;
 opacity: 0;
 position: absolute;
 right: 0px;
