@@ -1,5 +1,5 @@
 Packages & Dependencies ={
-
+yarn add ......{
 Nodejs,
 React,
 React-dom,
@@ -14,7 +14,7 @@ Firebase,
 @react-navigation/native,
 @react-navigation/stack,
 @reduxjs/toolkit
-}
+
 
 
 
@@ -22,3 +22,4 @@ Firebase,
 
 "slick-carousel/slick/slick.css";
 slick-carousel/slick/slick-theme.css
+}}
