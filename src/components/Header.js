@@ -111,7 +111,7 @@ letter-spacing: 1.42px;
 line-height: 1.08px;
 padding: 2px 0px;
 white-space: nowrap;
-position: relative;     }
+position: relative;     
 
    &:before{
 background-color: #4B006E;
@@ -125,11 +125,19 @@ right: 0px;
 transform-origin: left center;
 transform: scaleX (0);  
 transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
-       
+visibility: hidden:
+width: auto;
    }
 
 }
 
+&:hover {
+span: before{
+    transform: scaleX(1);
+    visibility: visible;
+    opacity: 1 !important;
+}
+    }  }
 
 ";
 
