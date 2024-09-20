@@ -44,7 +44,12 @@ title:accountSettings"> <b> Settings </b>  </button>
 const Header style = (props) => {
     return <Nav> 
         <Logo> <img src= "/images/GerastyxLogo.jpg" /> </Logo>
-        <NavMenu>   menu   </NavMenu>
+        <NavMenu>  <a href= "/home"> 
+        <img src = "/images/home-icon.png" alt= "HOME"/> 
+        <span> HOME </span>
+        </a>  
+        
+        </NavMenu>
         </Nav>;
 };
 
@@ -89,7 +94,45 @@ position: relative;
 margin-right: auto;
 margin-left: 25px;
 
-@media (max-width: 768px) {display: none;}
+a {
+display: flex;
+algn-items: center;
+padding: 0 12px;
+    img {
+height: 20px;
+min-width: 20px;        
+width: 20px; 
+z-index: auto;
+    }       
+span {
+color: #FFD700;
+font-size: 13px;
+letter-spacing: 1.42px;
+line-height: 1.08px;
+padding: 2px 0px;
+white-space: nowrap;
+position: relative;     }
+
+   &:before{
+background-color: #4B006E;
+border-radius: 0px 0px 4px 4px;
+bottom: -6px;
+content: "";
+height: 2px;   
+opacity: 0;
+position: absolute;
+right: 0px;
+transform-origin: left center;
+transform: scaleX (0);  
+transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+       
+   }
+
+}
+
+
 ";
+
+
 
 export default Header;
