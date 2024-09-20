@@ -1,3 +1,6 @@
+import styled from "styled-components";
+
+
 <Header style = "
 
 background-color: #4B006E; 
@@ -37,6 +40,6 @@ title:accountSettings"> <b> Settings </b>  </button>
 </Header>
 
 
-const Header style= "
-    
-    ";
+const Header style = (props) => {
+    return <div> Header </div>;
+};
