@@ -52,8 +52,8 @@ z-index: -1;
 
 const SignUp = styled.a"
 font-weight: bold;
-color: wh;
-background-color: ;
+color: #FFD700;
+background-color: #4B006E;
 margin-bottom: 12px;
 width: 100%;
 letter-spacing: 1.5px;
@@ -63,11 +63,11 @@ border: 1px solid transparent;
 border-radius: 4px;
 
 &:hover {
-  background-color:  ;    }
+  background-color: #6699CC ;    }
 ";
 
 const Description= styled.p"
- color: hsla(0, 0%, 95.3%, 1);
+ color: #FFD700;
 font-size: 11px;
 margin: 0 0 24px;
 line-height: 1.5;
