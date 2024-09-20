@@ -48,6 +48,23 @@ const Header style = (props) => {
         <img src = "/images/home-icon.png" alt= "HOME"/> 
         <span> HOME </span>
         </a>  
+
+       <a href= "/device"> 
+        <img src = "/images/devices-icon.png" alt= "DEVICES"/> 
+        <span> DEVICES </span>
+        </a>  
+
+
+ <a href= "/transfer"> 
+        <img src = "/images/transfer-icon.png" alt= "TRANSFER"/> 
+        <span> TRANSFER </span>
+        </a>  
+
+ <a href= "/settings"> 
+        <img src = "/images/settings-icon.png" alt= "SETTINGS"/> 
+        <span> SETTINGS </span>
+        </a>  
+
         
         </NavMenu>
         </Nav>;
