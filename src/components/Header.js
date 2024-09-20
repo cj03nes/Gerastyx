@@ -3,7 +3,7 @@
 background-color: #4B006E; 
 color: #FFD700;">
     
-   <img src= "../images/GerastyxLogo.png"/>{ }
+   <img src= "../images/GerastyxLogo.jpg"/>{ }
     
       <text style="
       margin-left: 250px;"> <b> GERASTYX INDUSTRIES</b>  </text>
