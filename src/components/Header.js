@@ -35,3 +35,8 @@ title:accountSettings"> <b> Settings </b>  </button>
         </div>
         
 </Header>
+
+
+const Header style= "
+    
+    ";
