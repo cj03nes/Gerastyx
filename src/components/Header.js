@@ -2,35 +2,8 @@ import styled from "styled-components";
 import "../interface/images/GerastyxLogo.jpg" as {GerastyxLogo};
 
 
-<Header style = "
 
-background-color: #4B006E; 
-color: #FFD700;">
-    
-   <img src= "../images/GerastyxLogo.jpg"/>{ }
-    
-      <text style="
-      margin-left: 250px;"> <b> GERASTYX INDUSTRIES</b>  </text>
    
-   
-   <button style="
-margin-right: -500px;
-background-color: #000000; 
-color: #FFD700;
-title: signUpOrLogin" >  <b> SignUp / Login </b> </button> 
-   
-   <button style="
-margin-left: 540px;
-background-color: #000000; 
-color: #FFD700;
-title: connectDevice"> <b> Connect Device</b> </button>
-   
-   <button style="
-margin-left: 750px;
-margin-top: -20px;
-background-color: #000000; 
-color: #FFD700;
-title:accountSettings"> <b> Settings </b>  </button>
     
      <div id="balances">
 <p>  <b> USD Balance: $0.00 </b> </p>
@@ -49,18 +22,18 @@ const Header style = (props) => {
         <span> HOME </span>
         </a>  
 
-       <a href= "/device"> 
+       <a href= "/connectDevice"> 
         <img src = "/images/devices-icon.png" alt= "DEVICES"/> 
         <span> DEVICES </span>
         </a>  
 
 
- <a href= "/transfer"> 
+ <a href= "/transferZeropoint" , "/transferUSD"> 
         <img src = "/images/transfer-icon.png" alt= "TRANSFER"/> 
         <span> TRANSFER </span>
         </a>  
 
- <a href= "/settings"> 
+ <a href= "/accountSettings"> 
         <img src = "/images/settings-icon.png" alt= "SETTINGS"/> 
         <span> SETTINGS </span>
         </a>  
