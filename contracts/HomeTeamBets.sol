@@ -3,7 +3,7 @@ pragma solidity ^0.8;
 import { VerifiedChains, VerifiedTokenAssets } from "../InstilledInteroperability.sol" ; 
 
 
-user flow
+//user flow
 // win , lose or tie ... optional overtime: yes or no
 // deposit yes or deposit no
 // money sits in contract & msg.sender gets a receiptNFT
@@ -14,7 +14,7 @@ user flow
 // remainder % number of winners = amountToPay;
 // transfer winner[amountDeposited] + amountToPay to msg.sender[winner]
 
-createBets
+//createBets
 // get weekly matchups
 // distinguish which one is the home team
 // create bet for the hometeam
@@ -22,7 +22,7 @@ createBets
 // get score updates Q1, Q2, halftime, Q3, Q4, End of Regulation
 // start winnerVsLoser and function transferWinnerProRata, 5 minutes after end of regulation for aggregate
 
-back-end answers
+//back-end answers
 */ an aggregate of team && score watchers
 1. bleacher report , https://bleacherreport.com/scores/nfl?from=sub
 2. espn football , https://www.espn.com/nfl/scoreboard
