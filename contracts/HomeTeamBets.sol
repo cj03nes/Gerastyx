@@ -3,6 +3,19 @@ pragma solidity ^0.8;
 import { VerifiedChains, VerifiedTokenAssets } from "../InstilledInteroperability.sol" ; 
 
 
+
+//1. createBets
+// get weekly matchups
+// distinguish which one is the home team
+// create bet for the hometeam
+// !deposits, 5 minutes before kickoff
+// get score updates Q1, Q2, halftime, Q3, Q4, End of Regulation
+// start winnerVsLoser and function transferWinnerProRata, 5 minutes after end of regulation for aggregate
+
+
+
+
+
 //2. user flow
 // win , lose or tie ... optional overtime: yes or no
 // deposit yes or deposit no
@@ -14,13 +27,26 @@ import { VerifiedChains, VerifiedTokenAssets } from "../InstilledInteroperabilit
 // remainder % number of winners = amountToPay;
 // transfer winner[amountDeposited] + amountToPay to msg.sender[winner]
 
-//1. createBets
-// get weekly matchups
-// distinguish which one is the home team
-// create bet for the hometeam
-// !deposits, 5 minutes before kickoff
-// get score updates Q1, Q2, halftime, Q3, Q4, End of Regulation
-// start winnerVsLoser and function transferWinnerProRata, 5 minutes after end of regulation for aggregate
+
+
+
+// 3. back-end answers
+*/ an aggregate of team && score watchers
+1. bleacher report , https://bleacherreport.com/scores/nfl?from=sub
+2. espn football , https://www.espn.com/nfl/scoreboard
+3. nfl.com , https://www.nfl.com/scores/
+4. fox football , https://www.foxsports.com/scores/nfl
+5. cbs football , https://www.cbssports.com/nfl/scoreboard/
+6.The Athletic, https://www.nytimes.com/athletic/nfl/schedule
+
+*/
+
+
+
+
+
+
+
 
 
 async function getWeeklyMatchups ={
@@ -42,16 +68,7 @@ return homeTeam = willHomeTeamWin( depositYes || depositNo) && willThereBeOverti
 }
 
 
-// 3. back-end answers
-*/ an aggregate of team && score watchers
-1. bleacher report , https://bleacherreport.com/scores/nfl?from=sub
-2. espn football , https://www.espn.com/nfl/scoreboard
-3. nfl.com , https://www.nfl.com/scores/
-4. fox football , https://www.foxsports.com/scores/nfl
-5. cbs football , https://www.cbssports.com/nfl/scoreboard/
-6.The Athletic, https://www.nytimes.com/athletic/nfl/schedule
 
-*/
 
 
 contract HomeTeamBets ={ 
