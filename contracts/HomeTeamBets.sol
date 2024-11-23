@@ -3,7 +3,7 @@ pragma solidity ^0.8;
 import { VerifiedChains, VerifiedTokenAssets } from "../InstilledInteroperability.sol" ; 
 
 
-//user flow
+//2. user flow
 // win , lose or tie ... optional overtime: yes or no
 // deposit yes or deposit no
 // money sits in contract & msg.sender gets a receiptNFT
@@ -14,7 +14,7 @@ import { VerifiedChains, VerifiedTokenAssets } from "../InstilledInteroperabilit
 // remainder % number of winners = amountToPay;
 // transfer winner[amountDeposited] + amountToPay to msg.sender[winner]
 
-//createBets
+//1. createBets
 // get weekly matchups
 // distinguish which one is the home team
 // create bet for the hometeam
@@ -22,7 +22,27 @@ import { VerifiedChains, VerifiedTokenAssets } from "../InstilledInteroperabilit
 // get score updates Q1, Q2, halftime, Q3, Q4, End of Regulation
 // start winnerVsLoser and function transferWinnerProRata, 5 minutes after end of regulation for aggregate
 
-//back-end answers
+
+async function getWeeklyMatchups ={
+
+if Team1 vs Team2, 
+then return Team1 = homeTeam,
+&& Team2 = awayTeam;
+
+
+if Team1 @ Team2,
+then return Team2 = homeTeam,
+&& Team1 = awayTeam;   }
+
+
+async function createBetPool ={
+  (require == getWeeklyMatchups, homeTeam, awayTeam);
+return homeTeam = willHomeTeamWin( depositYes || depositNo) && willThereBeOvertime(depositYesOT || depositNoOT);
+
+}
+
+
+// 3. back-end answers
 */ an aggregate of team && score watchers
 1. bleacher report , https://bleacherreport.com/scores/nfl?from=sub
 2. espn football , https://www.espn.com/nfl/scoreboard
