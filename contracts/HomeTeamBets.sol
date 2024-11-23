@@ -31,7 +31,7 @@ import { VerifiedChains, VerifiedTokenAssets } from "../InstilledInteroperabilit
 5. cbs football , https://www.cbssports.com/nfl/scoreboard/
 6.The Athletic, https://www.nytimes.com/athletic/nfl/schedule
 
-/*
+*/
 
 
 contract HomeTeamBets ={ 
