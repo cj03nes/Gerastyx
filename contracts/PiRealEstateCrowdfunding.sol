@@ -8,7 +8,7 @@ pragma solidity ^0.8;
 // buy stadium, mall, city, etc
 // connect payment processor in venue
 import PiPayment Processor;
-
+import InstilledInteroperability;
 // create stadiumNFT, mallNFT, cityNFT, or etc
 
 // allow people to invest in real-estate
@@ -19,9 +19,18 @@ contract realEstateCrowdfunding ={
 // * image or images here *
 // price = quantity % cost of land & development
 // quantity = < 100k 
-// 5% revenue to reCrowdfunding mktcap
+// async route 5% revenue to reCrowdfunding mktcap or distribute stipend to holder addresses
 
-function buy ={}
+function buy ={
+     (require == msg.sender[balance]);
+     (require == verifiedChain && verifiedTokenAssets);
+}
 
-function sell ={}
+function sell ={
+      (require == msg.sender[balance]);
+      (require == verifiedChain && verifiedTokenAssets);
+}
+
+
+
 }
