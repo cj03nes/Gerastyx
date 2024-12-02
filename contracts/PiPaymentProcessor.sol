@@ -18,3 +18,18 @@ contract PiPaymentProcessor ={
 
 
 }
+
+
+
+// USER-SIDE
+find product
+pay for product
+
+
+
+
+
+//BUSINESS-SIDE
+list product
+accept payment in asset X
+asyn swap to asset Z
