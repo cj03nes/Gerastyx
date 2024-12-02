@@ -11,8 +11,8 @@ import InstilledInteroperability;
 contract PiFi ={
      (require == verifiedChains);
      (require == verifiedTokenAssets);
-     (require == , if !verifiedChain return error, " CHAIN NOT AVAILABLE");
-     (require == , if !verifiedTokenAsset return error, " TOKEN NOT ACCEPTED");
+     (require == if !verifiedChain return error, " CHAIN NOT AVAILABLE");
+     (require == if !verifiedTokenAsset return error, " TOKEN NOT ACCEPTED");
 
 function stake ={
 // DOES NOT GENERATE REVENUE, INCREASES TOTAL VALUE LOCKED FOR STABILITY THO
@@ -43,7 +43,7 @@ function borrow ={
 }
 
 function pool ={
-// USERS ADD ASSETS TO A POOL && SHARE THE trx.Fees OF THAT SAID POOL
+// USERS ADD ASSETS TO A POOL && SHARE THE trx.Fees OF THAT SAID POOL &| ADD ADS & AD-REV TO THAT SPECIFIC POOL-PAGE AND WORK THAT OUT
 // ALMOST A PONZI / FIRST-IN FIRST-OUT EXCEPT PEOPLE CHOOSE WHEN THEY ENTER OR LEAVE, NO TERM-LOCKS
 }
 
