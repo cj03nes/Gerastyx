@@ -1,6 +1,7 @@
 pragma solidity ^0.8;
 
-// import kyc/aml info too
+// import kyc/aml info too;
+// import Pi {USD Denomination];
 
 // enter age, sex, and citizenship info
 function vagueWho ={
@@ -34,7 +35,16 @@ if allstate price > progressive price return progressive;
 // users pay in Pi => insurance agency accepts USD
 function payPiToPayUSD ={
      (require == msg.sender[balance];
-     (require == 
+     (require == Pi[USD Denomination];
+
+
+if Pi price = $50;
+if USD price = $1;
+if insurance[bill] = $100;
+then get Pi[USD Denomination];
+Pi[USD Denomination] is insurance[bill] % Pi price = amountOf Pi;
+2 = $100 % $50;
+100 PiInUSD = 2 Pi;
 
 
 }
