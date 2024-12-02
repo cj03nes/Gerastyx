@@ -1,4 +1,9 @@
+pragma solidity ^0.8;
+
+
 // create student account
+
+
 // create student-athlete account
 
 // create college accounts
